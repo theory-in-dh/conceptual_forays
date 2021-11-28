@@ -1,4 +1,4 @@
-# Schreibweise
+## Spelling
 
 | original                       | revision |
 |--------------------------------|----------|
