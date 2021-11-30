@@ -1,0 +1,18 @@
+# Use the MediaWiki API to get the articles from a specific category in a specific Wikipedia language version.
+# Query by @espejolento
+SELECT ?item ?itemLabel WHERE {
+  BIND("Category:Russian_formalism" as ?category)               # Specifies the category
+  SERVICE wikibase:mwapi {
+     bd:serviceParam wikibase:endpoint "en.wikipedia.org";     # Set the project here
+                     wikibase:api "Generator";
+                     mwapi:generator "categorymembers";        # Selects the content from a category
+                     mwapi:gcmtitle ?category.
+     ?item wikibase:apiOutputItem mwapi:item.
+  } 
+  FILTER BOUND (?item)                                         # Safeguard to not get a timeout from unbound items when using ?item below
+  FILTER EXISTS {
+    ?article schema:about ?item .
+    ?item wdt:P31 wd:Q5. #filter those who are an instance of human
+  }
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }    
+}
