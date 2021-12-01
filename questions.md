@@ -4,7 +4,7 @@
 |--------------------------------|----------|
 | "Mikhail Mikhailovich Bahktin" |"Mikhail Mikhailovich Bakhtin"|
 | "Bahktin"                      |"Bakhtin"| 
-
+| "Structuralist Linguistics"|"Structural Linguistics"| 
 
 ## Context wanted
 
@@ -14,6 +14,8 @@
 |Theory of Formalism|same as formalism?|
 |Formalist Theory|same as formalism?|
 |Structuralis* narratology|why the wildcard?|
+|Structuralist Theory|same as structuralism?|
+|Theory of Structuralism|same as structuralism?|
 |Narrative theory|same as narratology?|
 |Okonkwo|context please?|
 
