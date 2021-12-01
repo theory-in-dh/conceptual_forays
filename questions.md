@@ -28,5 +28,21 @@
 * Examples of false postives: Colonial Studies [Q11540642](https://www.wikidata.org/wiki/Q11540642) & Critical Theory [Q109612762](https://www.wikidata.org/wiki/Q109612762)
 * Not sure if political criticism in our context is the same as https://en.wikipedia.org/wiki/Political_criticism
 * Reader-response theory might be https://en.wikipedia.org/wiki/Reader-response_criticism
+* In order to get an idea of the diversity of "types of" for the different "theories of" some here are the frequencies of "instance of" for each matched theory:
 
+| instance_of               | freq |
+|---------------------------|------|
+| philosophical movement    | 7    |
+| term                      | 6    |
+| academic major            | 2    |
+| branch of science         | 2    |
+| literary theory           | 2    |
+| school of thought         | 2    |
+| theory                    | 2    |
+| academic discipline       | 1    |
+| interdisciplinary science | 1    |
+| Marxist school of thought | 1    |
+| philosophy                | 1    |
+| political movement        | 1    |
+| (blank)                   | 44   |
 
