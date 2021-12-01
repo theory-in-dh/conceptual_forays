@@ -14,7 +14,8 @@
 |Theory of Formalism|same as formalism?|
 |Formalist Theory|same as formalism?|
 |Structuralis* narratology|why the wildcard?|
-|Narrative theory|Same as narratology?|
+|Narrative theory|same as narratology?|
+|Okonkwo|context please?|
 
 
 ## Notes
