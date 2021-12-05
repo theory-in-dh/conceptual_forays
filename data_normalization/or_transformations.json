@@ -1,0 +1,7109 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "1",
+                "l": "1"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "1"
+      }
+    ],
+    "description": "Mass edit cells in column Column 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2",
+                "l": "2"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "2"
+      }
+    ],
+    "description": "Mass edit cells in column Column 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "3",
+                "l": "3"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "3"
+      }
+    ],
+    "description": "Mass edit cells in column Column 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "4",
+                "l": "4"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "4"
+      }
+    ],
+    "description": "Mass edit cells in column Column 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "6",
+                "l": "6"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "6"
+      }
+    ],
+    "description": "Mass edit cells in column Column 3"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "9",
+                "l": "9"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "9"
+      }
+    ],
+    "description": "Mass edit cells in column Column 3"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Column 3",
+          "expression": "value",
+          "columnName": "Column 3",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 5",
+          "expression": "value",
+          "columnName": "Column 5",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "1",
+                "l": "1"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3"
+      }
+    ],
+    "description": "Mass edit cells in column Column 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 5",
+    "description": "Remove column Column 5"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "1",
+                "l": "1"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "grel:1",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 3 using expression grel:1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2",
+                "l": "2"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "grel:2",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 3 using expression grel:2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Column 4",
+          "expression": "value",
+          "columnName": "Column 4",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "3",
+                "l": "3"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "grel:3",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 3 using expression grel:3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Column 4",
+    "description": "Remove column Column 4"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Column 3",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Column 3 using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Freq",
+    "newColumnName": "query_string",
+    "description": "Rename column Freq to query_string"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column 3",
+    "newColumnName": "frequ",
+    "description": "Rename column Column 3 to frequ"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "frequ",
+    "newColumnName": "freq",
+    "description": "Rename column frequ to freq"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "query_string",
+    "expression": "grel:value",
+    "onError": "set-to-blank",
+    "newColumnName": "normalized_string",
+    "columnInsertIndex": 2,
+    "description": "Create column normalized_string at index 2 based on column query_string using expression grel:value"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theory of meaning ",
+          "theory of meaning",
+          "theory of meaning (",
+          "theory of meaning -",
+          "theory of meaning .",
+          "theory of meaning . ",
+          "theory of meaning . \\\"",
+          "theory of meaning \\\"",
+          "theory of meaning \\\" )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of meaning "
+      },
+      {
+        "from": [
+          "theory of communication ",
+          "theory of communication",
+          "theory of communication (",
+          "theory of communication -",
+          "theory of communication .",
+          "theory of communication \\\"",
+          "theory of communication \\\" ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of communication "
+      },
+      {
+        "from": [
+          "theory of literature ",
+          "theory of literature",
+          "theory of literature (",
+          "theory of literature .",
+          "theory of literature :",
+          "theory of literature ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of literature "
+      },
+      {
+        "from": [
+          "theory of computation ",
+          "theory of computation",
+          "theory of computation '",
+          "theory of computation ' ",
+          "theory of computation ' .",
+          "theory of computation ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of computation "
+      },
+      {
+        "from": [
+          "theories of language ",
+          "theories of language",
+          "theories of language .",
+          "theories of language :",
+          "theories of language ;",
+          "theories of language ; language"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of language "
+      },
+      {
+        "from": [
+          "theory of verse ",
+          "theory of . verse",
+          "theory of . verse ",
+          "theory of verse",
+          "theory of verse '",
+          "theory of verse ' :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of verse "
+      },
+      {
+        "from": [
+          "theory of everything",
+          "theory of everything '",
+          "theory of everything ' )",
+          "theory of everything ' -",
+          "theory of everything \\\"",
+          "theory of everything \\\" ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of everything"
+      },
+      {
+        "from": [
+          "theory of language ",
+          "theory of language",
+          "theory of language (",
+          "theory of language .",
+          "theory of language ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language "
+      },
+      {
+        "from": [
+          "theories of textuality",
+          "theories of textuality (",
+          "theories of textuality .",
+          "theories of textuality \\\"",
+          "theories of textuality \\\" "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of textuality"
+      },
+      {
+        "from": [
+          "theory of games ",
+          "theory of games",
+          "theory of games '",
+          "theory of games ' .",
+          "theory of games ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of games "
+      },
+      {
+        "from": [
+          "theory of discourse ",
+          "theory of discourse",
+          "theory of discourse (",
+          "theory of discourse ( discourse",
+          "theory of discourse ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of discourse "
+      },
+      {
+        "from": [
+          "theory of metaphor",
+          "theory of metaphor (",
+          "theory of metaphor .",
+          "theory of metaphor . ",
+          "theory of metaphor theory"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of metaphor"
+      },
+      {
+        "from": [
+          "theory of style ",
+          "theory of style",
+          "theory of style (",
+          "theory of style ( \\\"",
+          "theory of style ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of style "
+      },
+      {
+        "from": [
+          "theory of . NA",
+          "theory of . NA NA",
+          "theory of NA",
+          "theory of NA NA",
+          "theory of NA NA NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of . NA"
+      },
+      {
+        "from": [
+          "theory of writing",
+          "theory of writing (",
+          "theory of writing .",
+          "theory of writing . ",
+          "theory of writing ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of writing"
+      },
+      {
+        "from": [
+          "theory of '",
+          "theory of (",
+          "theory of .",
+          "theory of \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of '"
+      },
+      {
+        "from": [
+          "theory of authorship shakespeare",
+          "theory of authorship shakespeare '",
+          "theory of shakespeare authorship",
+          "theory of shakespeare authorship ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of authorship shakespeare"
+      },
+      {
+        "from": [
+          "theory of lexicography ",
+          "theory of lexicography",
+          "theory of lexicography '",
+          "theory of lexicography ' "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of lexicography "
+      },
+      {
+        "from": [
+          "theory of novel",
+          "theory of novel (",
+          "theory of novel .",
+          "theory of novel \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of novel"
+      },
+      {
+        "from": [
+          "theory of ' forms",
+          "theory of ' forms '",
+          "theory of forms",
+          "theory of forms ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ' forms"
+      },
+      {
+        "from": [
+          "theory of evolution ",
+          "theory of evolution",
+          "theory of evolution .",
+          "theory of evolution . '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of evolution "
+      },
+      {
+        "from": [
+          "theory of perception ",
+          "theory of perception",
+          "theory of perception .",
+          "theory of perception . ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of perception "
+      },
+      {
+        "from": [
+          "theories of literature ",
+          "theories of literature",
+          "theories of literature (",
+          "theories of literature ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of literature "
+      },
+      {
+        "from": [
+          "theory of statistics ",
+          "theory of statistics",
+          "theory of statistics .",
+          "theory of statistics :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of statistics "
+      },
+      {
+        "from": [
+          "theory of mind ",
+          "theory of mind",
+          "theory of mind \\\"",
+          "theory of mind \\\" ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mind "
+      },
+      {
+        "from": [
+          "theory of information",
+          "theory of information (",
+          "theory of information \\\"",
+          "theory of information \\\" "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of information"
+      },
+      {
+        "from": [
+          "theory of narrative ",
+          "theory of narrative",
+          "theory of narrative '",
+          "theory of narrative ' ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of narrative "
+      },
+      {
+        "from": [
+          "theory of ' fuzzy sets",
+          "theory of fuzzy sets",
+          "theory of fuzzy sets ",
+          "theory of fuzzy sets theory"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ' fuzzy sets"
+      },
+      {
+        "from": [
+          "theory of types",
+          "theory of types ;",
+          "theory of types ; ",
+          "theory of types of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of types"
+      },
+      {
+        "from": [
+          "theory of ' literary",
+          "theory of ' literary '",
+          "theory of literary",
+          "theory of literary ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ' literary"
+      },
+      {
+        "from": [
+          "theory of prosody",
+          "theory of prosody (",
+          "theory of prosody ( \\\"",
+          "theory of prosody ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of prosody"
+      },
+      {
+        "from": [
+          "theory of relations",
+          "theory of relations of",
+          "theory of relations of relations"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of relations"
+      },
+      {
+        "from": [
+          "theory of textual markup",
+          "theory of textual markup ",
+          "theory of textual markup '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of textual markup"
+      },
+      {
+        "from": [
+          "theory of copy-text",
+          "theory of copy-text '",
+          "theory of copy-text ' "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of copy-text"
+      },
+      {
+        "from": [
+          "theories of human behavior",
+          "theories of human behavior ",
+          "theories of human behavior ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of human behavior"
+      },
+      {
+        "from": [
+          "theory of language use",
+          "theory of language use ",
+          "theory of language use '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language use"
+      },
+      {
+        "from": [
+          "theory of karlsson",
+          "theory of karlsson (",
+          "theory of karlsson ( karlsson"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of karlsson"
+      },
+      {
+        "from": [
+          "theory of lexicon",
+          "theory of lexicon '",
+          "theory of lexicon ' ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of lexicon"
+      },
+      {
+        "from": [
+          "theories of electoral choice",
+          "theories of electoral choice ",
+          "theories of electoral choice ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of electoral choice"
+      },
+      {
+        "from": [
+          "theorization of comics",
+          "theorization of comics .",
+          "theorization of comics . "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorization of comics"
+      },
+      {
+        "from": [
+          "theory of generalized quantifiers",
+          "theory of generalized quantifiers .",
+          "theory of generalized quantifiers of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of generalized quantifiers"
+      },
+      {
+        "from": [
+          "theory of levels",
+          "theory of levels of",
+          "theory of levels of '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of levels"
+      },
+      {
+        "from": [
+          "theory of music",
+          "theory of music .",
+          "theory of music :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of music"
+      },
+      {
+        "from": [
+          "theories of mind",
+          "theories of mind .",
+          "theories of mind . \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of mind"
+      },
+      {
+        "from": [
+          "theory of oral-formulaic composition",
+          "theory of oral-formulaic composition ",
+          "theory of oral-formulaic composition '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of oral-formulaic composition"
+      },
+      {
+        "from": [
+          "theory of text ",
+          "theory of text",
+          "theory of text ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of text "
+      },
+      {
+        "from": [
+          "theory of nostalgia",
+          "theory of nostalgia .",
+          "theory of nostalgia . ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of nostalgia"
+      },
+      {
+        "from": [
+          "theory of automata",
+          "theory of automata .",
+          "theory of automata . \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of automata"
+      },
+      {
+        "from": [
+          "theorizations of postmodern",
+          "theorizations of postmodern '",
+          "theorizations of postmodern ' "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorizations of postmodern"
+      },
+      {
+        "from": [
+          "theories of metaphor",
+          "theories of metaphor .",
+          "theories of metaphor ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of metaphor"
+      },
+      {
+        "from": [
+          "theory of learning ",
+          "theory of learning",
+          "theory of learning ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of learning "
+      },
+      {
+        "from": [
+          "theories of reading ",
+          "theories of reading",
+          "theories of reading ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of reading "
+      },
+      {
+        "from": [
+          "theory of liu4-shul",
+          "theory of liu4-shul [",
+          "theory of liu4-shul [ ^"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of liu4-shul"
+      },
+      {
+        "from": [
+          "theories of editing ",
+          "theories of editing",
+          "theories of editing ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of editing "
+      },
+      {
+        "from": [
+          "theory of aesthetic evolution",
+          "theory of aesthetic evolution ",
+          "theory of aesthetic evolution ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of aesthetic evolution"
+      },
+      {
+        "from": [
+          "theories of language acquisition",
+          "theories of language acquisition .",
+          "theories of language acquisition ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of language acquisition"
+      },
+      {
+        "from": [
+          "theories of margins ",
+          "theories of margins",
+          "theories of margins ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of margins "
+      },
+      {
+        "from": [
+          "theory of interpretation",
+          "theory of interpretation .",
+          "theory of interpretation of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of interpretation"
+      },
+      {
+        "from": [
+          "theory of intelligence",
+          "theory of intelligence '",
+          "theory of intelligence ' "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of intelligence"
+      },
+      {
+        "from": [
+          "theories of meaning ",
+          "theories of meaning",
+          "theories of meaning \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of meaning "
+      },
+      {
+        "from": [
+          "theory of probability metrics",
+          "theory of probability metrics ",
+          "theory of probability metrics ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of probability metrics"
+      },
+      {
+        "from": [
+          "theory of literary communication",
+          "theory of literary communication ",
+          "theory of literary communication literary"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of literary communication"
+      },
+      {
+        "from": [
+          "theory of digital humanities",
+          "theory of digital humanities ",
+          "theory of digital humanities ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of digital humanities"
+      },
+      {
+        "from": [
+          "theories of relativity",
+          "theories of relativity '",
+          "theories of relativity ' "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of relativity"
+      },
+      {
+        "from": [
+          "theory of tonal music",
+          "theory of tonal music (",
+          "theory of tonal music ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of tonal music"
+      },
+      {
+        "from": [
+          "theory of sense",
+          "theory of sense '",
+          "theory of sense sense"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of sense"
+      },
+      {
+        "from": [
+          "theory of embodiment",
+          "theory of embodiment '",
+          "theory of embodiment ' ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of embodiment"
+      },
+      {
+        "from": [
+          "theories of text ",
+          "theories of text",
+          "theories of text ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of text "
+      },
+      {
+        "from": [
+          "theory of strategies ",
+          "theory of strategies",
+          "theory of strategies ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of strategies "
+      },
+      {
+        "from": [
+          "theory of scales",
+          "theory of scales )",
+          "theory of scales ) ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of scales"
+      },
+      {
+        "from": [
+          "theory of probability ",
+          "theory of probability",
+          "theory of probability ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of probability "
+      },
+      {
+        "from": [
+          "theory of signs ",
+          "theory of signs",
+          "theory of signs ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of signs "
+      },
+      {
+        "from": [
+          "theory of tonality ",
+          "theory of tonality",
+          "theory of tonality ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of tonality "
+      },
+      {
+        "from": [
+          "theory of electronic textuality",
+          "theory of electronic textuality [",
+          "theory of textuality . electronic"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of electronic textuality"
+      },
+      {
+        "from": [
+          "theory of competence ",
+          "theory of competence",
+          "theory of competence ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of competence "
+      },
+      {
+        "from": [
+          "theory of knowledge ",
+          "theory of knowledge",
+          "theory of knowledge ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of knowledge "
+      },
+      {
+        "from": [
+          "theories of intertextuality",
+          "theories of intertextuality .",
+          "theories of intertextuality . "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of intertextuality"
+      },
+      {
+        "from": [
+          "theory of induction",
+          "theory of induction .",
+          "theory of induction . \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of induction"
+      },
+      {
+        "from": [
+          "theory of concordances",
+          "theory of concordances \\\"",
+          "theory of concordances \\\" \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of concordances"
+      },
+      {
+        "from": [
+          "theory of values",
+          "theory of values '",
+          "theory of values ' "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of values"
+      },
+      {
+        "from": [
+          "theory of relativity ",
+          "theory of relativity",
+          "theory of relativity ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of relativity "
+      },
+      {
+        "from": [
+          "theory of markup ",
+          "theory of markup",
+          "theory of markup ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of markup "
+      },
+      {
+        "from": [
+          "theories of media ",
+          "theories of media",
+          "theories of media ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of media "
+      },
+      {
+        "from": [
+          "theories of investigator",
+          "theories of investigator .",
+          "theories of investigator . ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of investigator"
+      },
+      {
+        "from": [
+          "theory of intelligent reasoning",
+          "theory of intelligent reasoning ",
+          "theory of intelligent reasoning \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of intelligent reasoning"
+      },
+      {
+        "from": [
+          "theories of narrative",
+          "theories of narrative (",
+          "theories of narrative ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of narrative"
+      },
+      {
+        "from": [
+          "theories of curating",
+          "theories of curating \\\"",
+          "theories of curating \\\" ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of curating"
+      },
+      {
+        "from": [
+          "theory of present",
+          "theory of present '",
+          "theory of present ' "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of present"
+      },
+      {
+        "from": [
+          "theories of writing ",
+          "theories of writing",
+          "theories of writing \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of writing "
+      },
+      {
+        "from": [
+          "theories of intelligence",
+          "theories of intelligence (",
+          "theories of intelligence ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of intelligence"
+      },
+      {
+        "from": [
+          "theories of virality",
+          "theories of virality .",
+          "theories of virality . "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of virality"
+      },
+      {
+        "from": [
+          "theory of modes",
+          "theory of modes (",
+          "theory of modes of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of modes"
+      },
+      {
+        "from": [
+          "theory of linguistic variation",
+          "theory of linguistic variation '",
+          "theory of linguistic variation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of linguistic variation"
+      },
+      {
+        "from": [
+          "theories of punctuation",
+          "theories of punctuation .",
+          "theories of punctuation . \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of punctuation"
+      },
+      {
+        "from": [
+          "theories of mediation",
+          "theories of mediation \\\"",
+          "theories of mediation \\\" ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of mediation"
+      },
+      {
+        "from": [
+          "theory of ruin-value",
+          "theory of ruin-value '",
+          "theory of ruin-value ' "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ruin-value"
+      },
+      {
+        "from": [
+          "theory of indexing ",
+          "theory of indexing",
+          "theory of indexing ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of indexing "
+      },
+      {
+        "from": [
+          "theory of texts ",
+          "theory of texts",
+          "theory of texts ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of texts "
+      },
+      {
+        "from": [
+          "theory of subject",
+          "theory of subject .",
+          "theory of subject of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of subject"
+      },
+      {
+        "from": [
+          "theory of interdisciplinarity",
+          "theory of interdisciplinarity (",
+          "theory of interdisciplinarity ( \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of interdisciplinarity"
+      },
+      {
+        "from": [
+          "theory of formal languages",
+          "theory of formal languages (",
+          "theory of formal languages ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of formal languages"
+      },
+      {
+        "from": [
+          "theory of linguistic performance",
+          "theory of linguistic performance ?",
+          "theory of linguistic performance of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of linguistic performance"
+      },
+      {
+        "from": [
+          "theory of authorship",
+          "theory of authorship .",
+          "theory of authorship of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of authorship"
+      },
+      {
+        "from": [
+          "theory of virtue",
+          "theory of virtue .",
+          "theory of virtue . \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of virtue"
+      },
+      {
+        "from": [
+          "theory of learnable",
+          "theory of learnable '",
+          "theory of learnable ' ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of learnable"
+      },
+      {
+        "from": [
+          "theories of structure",
+          "theories of structure .",
+          "theories of structure of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of structure"
+      },
+      {
+        "from": [
+          "theory of electromagnetism reality",
+          "theory of electromagnetism reality of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of electromagnetism reality"
+      },
+      {
+        "from": [
+          "theories of interpretation",
+          "theories of interpretation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of interpretation"
+      },
+      {
+        "from": [
+          "theory of semantic processing",
+          "theory of semantic processing ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of semantic processing"
+      },
+      {
+        "from": [
+          "theory of literary allusion",
+          "theory of literary allusion "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of literary allusion"
+      },
+      {
+        "from": [
+          "theory of central places",
+          "theory of central places "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of central places"
+      },
+      {
+        "from": [
+          "theory of vocabulary ",
+          "theory of vocabulary"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of vocabulary "
+      },
+      {
+        "from": [
+          "theory of pauline authorship",
+          "theory of pauline authorship '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of pauline authorship"
+      },
+      {
+        "from": [
+          "theorists of hypertext ",
+          "theorists of hypertext"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of hypertext "
+      },
+      {
+        "from": [
+          "theories of social science",
+          "theories of social science ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of social science"
+      },
+      {
+        "from": [
+          "theories of agency",
+          "theories of agency ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of agency"
+      },
+      {
+        "from": [
+          "theory of ' conceptual metaphor",
+          "theory of conceptual metaphor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ' conceptual metaphor"
+      },
+      {
+        "from": [
+          "theories of discourse comprehension",
+          "theories of discourse comprehension ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of discourse comprehension"
+      },
+      {
+        "from": [
+          "theory of si parsing",
+          "theory of si parsing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of si parsing"
+      },
+      {
+        "from": [
+          "theories of personality",
+          "theories of personality ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of personality"
+      },
+      {
+        "from": [
+          "theories of shakespearean co-authorship",
+          "theories of shakespearean co-authorship ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of shakespearean co-authorship"
+      },
+      {
+        "from": [
+          "theory of word processing",
+          "theory of word processing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of word processing"
+      },
+      {
+        "from": [
+          "theory of animals",
+          "theory of animals ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of animals"
+      },
+      {
+        "from": [
+          "theory of \\\" rhetorical",
+          "theory of rhetorical"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of \\\" rhetorical"
+      },
+      {
+        "from": [
+          "theories of critical editing",
+          "theories of critical editing ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of critical editing"
+      },
+      {
+        "from": [
+          "theory of lexical diffusion",
+          "theory of lexical diffusion ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of lexical diffusion"
+      },
+      {
+        "from": [
+          "theorists of cybernetic era",
+          "theorists of cybernetic era ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of cybernetic era"
+      },
+      {
+        "from": [
+          "theory of ' fuzzy",
+          "theory of fuzzy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ' fuzzy"
+      },
+      {
+        "from": [
+          "theories of media change",
+          "theories of media change ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of media change"
+      },
+      {
+        "from": [
+          "theory of single authorship",
+          "theory of single authorship "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of single authorship"
+      },
+      {
+        "from": [
+          "theory of poetic frenzy",
+          "theory of poetic frenzy "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of poetic frenzy"
+      },
+      {
+        "from": [
+          "theories of behaviour",
+          "theories of behaviour ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of behaviour"
+      },
+      {
+        "from": [
+          "theory of extended texts",
+          "theory of extended texts "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of extended texts"
+      },
+      {
+        "from": [
+          "theory of particular language",
+          "theory of particular language "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of particular language"
+      },
+      {
+        "from": [
+          "theory of linguistics",
+          "theory of linguistics ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of linguistics"
+      },
+      {
+        "from": [
+          "theory of mystical development",
+          "theory of mystical development ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mystical development"
+      },
+      {
+        "from": [
+          "theories of multiple authorship",
+          "theories of multiple authorship "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of multiple authorship"
+      },
+      {
+        "from": [
+          "theory of foregrounding ",
+          "theory of foregrounding"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of foregrounding "
+      },
+      {
+        "from": [
+          "theories of interactive fiction",
+          "theories of interactive fiction "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of interactive fiction"
+      },
+      {
+        "from": [
+          "theories of digital literary",
+          "theories of digital literary "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of digital literary"
+      },
+      {
+        "from": [
+          "theory of performance ",
+          "theory of performance"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of performance "
+      },
+      {
+        "from": [
+          "theory of social change",
+          "theory of social change "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of social change"
+      },
+      {
+        "from": [
+          "theory of software simulation",
+          "theory of software simulation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of software simulation"
+      },
+      {
+        "from": [
+          "theory of multimodality",
+          "theory of multimodality of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of multimodality"
+      },
+      {
+        "from": [
+          "theory of musical structure",
+          "theory of musical structure ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of musical structure"
+      },
+      {
+        "from": [
+          "theory of infinite semiosis",
+          "theory of infinite semiosis '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of infinite semiosis"
+      },
+      {
+        "from": [
+          "theories of information ",
+          "theories of information"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of information "
+      },
+      {
+        "from": [
+          "theories of david greetham",
+          "theories of david greetham ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of david greetham"
+      },
+      {
+        "from": [
+          "theory of sublime",
+          "theory of sublime :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of sublime"
+      },
+      {
+        "from": [
+          "theories of modern linguistics",
+          "theories of modern linguistics ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of modern linguistics"
+      },
+      {
+        "from": [
+          "theory of reading",
+          "theory of reading ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of reading"
+      },
+      {
+        "from": [
+          "theory of sema",
+          "theory of sema /"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of sema"
+      },
+      {
+        "from": [
+          "theories of neural networks",
+          "theories of neural networks ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of neural networks"
+      },
+      {
+        "from": [
+          "theory of criticism ",
+          "theory of criticism"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of criticism "
+      },
+      {
+        "from": [
+          "theory of revolution",
+          "theory of revolution ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of revolution"
+      },
+      {
+        "from": [
+          "theories of translation",
+          "theories of translation ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of translation"
+      },
+      {
+        "from": [
+          "theorization of cybertext poetics",
+          "theorization of cybertext poetics "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorization of cybertext poetics"
+      },
+      {
+        "from": [
+          "theory of mysticism ",
+          "theory of mysticism"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mysticism "
+      },
+      {
+        "from": [
+          "theories of intercultural exchange",
+          "theories of intercultural exchange ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of intercultural exchange"
+      },
+      {
+        "from": [
+          "theory of constant-recording camera",
+          "theory of constant-recording camera of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of constant-recording camera"
+      },
+      {
+        "from": [
+          "theories of allusion",
+          "theories of allusion ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of allusion"
+      },
+      {
+        "from": [
+          "theories of foucault ",
+          "theories of foucault"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of foucault "
+      },
+      {
+        "from": [
+          "theory of group cognition",
+          "theory of group cognition ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of group cognition"
+      },
+      {
+        "from": [
+          "theories of calculus",
+          "theories of calculus of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of calculus"
+      },
+      {
+        "from": [
+          "theory of collision",
+          "theory of collision of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of collision"
+      },
+      {
+        "from": [
+          "theory of history ",
+          "theory of history"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of history "
+      },
+      {
+        "from": [
+          "theory of set complexes",
+          "theory of set complexes "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of set complexes"
+      },
+      {
+        "from": [
+          "theories of cognition ",
+          "theories of cognition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of cognition "
+      },
+      {
+        "from": [
+          "theory of diffusion",
+          "theory of diffusion of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of diffusion"
+      },
+      {
+        "from": [
+          "theory of quests",
+          "theory of quests ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of quests"
+      },
+      {
+        "from": [
+          "theory of dramatic narrative",
+          "theory of dramatic narrative "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of dramatic narrative"
+      },
+      {
+        "from": [
+          "theories of classification ",
+          "theories of classification"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of classification "
+      },
+      {
+        "from": [
+          "theory of gaming ",
+          "theory of gaming"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of gaming "
+      },
+      {
+        "from": [
+          "theoreticizing of process ",
+          "theoreticizing of process"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theoreticizing of process "
+      },
+      {
+        "from": [
+          "theory of language variation",
+          "theory of language variation ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language variation"
+      },
+      {
+        "from": [
+          "theory of nature meanings",
+          "theory of nature meanings of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of nature meanings"
+      },
+      {
+        "from": [
+          "theories of demography crystallized",
+          "theories of demography crystallized "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of demography crystallized"
+      },
+      {
+        "from": [
+          "theory of discourse processing",
+          "theory of discourse processing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of discourse processing"
+      },
+      {
+        "from": [
+          "theory of computing",
+          "theory of computing ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of computing"
+      },
+      {
+        "from": [
+          "theory of parthood ",
+          "theory of parthood"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of parthood "
+      },
+      {
+        "from": [
+          "theory of formalization proof",
+          "theory of formalization proof of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of formalization proof"
+      },
+      {
+        "from": [
+          "theory of development",
+          "theory of development of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of development"
+      },
+      {
+        "from": [
+          "theorization of object",
+          "theorization of object of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorization of object"
+      },
+      {
+        "from": [
+          "theory of graphs applications",
+          "theory of graphs applications ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of graphs applications"
+      },
+      {
+        "from": [
+          "theories of skill acquisition",
+          "theories of skill acquisition of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of skill acquisition"
+      },
+      {
+        "from": [
+          "theory of impossibility",
+          "theory of impossibility of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of impossibility"
+      },
+      {
+        "from": [
+          "theorizing of late 1990s",
+          "theorizing of late 1990s ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorizing of late 1990s"
+      },
+      {
+        "from": [
+          "theories of relevance multitude",
+          "theories of relevance multitude of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of relevance multitude"
+      },
+      {
+        "from": [
+          "theorists of digital textuality",
+          "theorists of digital textuality "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of digital textuality"
+      },
+      {
+        "from": [
+          "theory of number",
+          "theory of number of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of number"
+      },
+      {
+        "from": [
+          "theory of science ",
+          "theory of science"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of science "
+      },
+      {
+        "from": [
+          "theories of oral composition",
+          "theories of oral composition of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of oral composition"
+      },
+      {
+        "from": [
+          "theory of integrative levels",
+          "theory of integrative levels ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of integrative levels"
+      },
+      {
+        "from": [
+          "theory of narrative developed",
+          "theory of narrative developed "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of narrative developed"
+      },
+      {
+        "from": [
+          "theories of sign",
+          "theories of sign ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of sign"
+      },
+      {
+        "from": [
+          "theory of propositions ",
+          "theory of propositions"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of propositions "
+      },
+      {
+        "from": [
+          "theory of metaphors ",
+          "theory of metaphors"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of metaphors "
+      },
+      {
+        "from": [
+          "theories of collaborative learning",
+          "theories of collaborative learning ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of collaborative learning"
+      },
+      {
+        "from": [
+          "theories of teaching learning",
+          "theories of teaching learning "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of teaching learning"
+      },
+      {
+        "from": [
+          "theories of perception representation",
+          "theories of perception representation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of perception representation"
+      },
+      {
+        "from": [
+          "theorems of foundations",
+          "theorems of foundations of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorems of foundations"
+      },
+      {
+        "from": [
+          "theory of sequence comparison",
+          "theory of sequence comparison "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of sequence comparison"
+      },
+      {
+        "from": [
+          "theory of case grammar",
+          "theory of case grammar "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of case grammar"
+      },
+      {
+        "from": [
+          "theories of \\\" natural language",
+          "theories of natural language"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of \\\" natural language"
+      },
+      {
+        "from": [
+          "theories of so-called",
+          "theories of so-called '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of so-called"
+      },
+      {
+        "from": [
+          "theory of tropes figures",
+          "theory of tropes figures )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of tropes figures"
+      },
+      {
+        "from": [
+          "theory of ideas ",
+          "theory of ideas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ideas "
+      },
+      {
+        "from": [
+          "theories of social perception",
+          "theories of social perception ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of social perception"
+      },
+      {
+        "from": [
+          "theory of textual understanding",
+          "theory of textual understanding ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of textual understanding"
+      },
+      {
+        "from": [
+          "theoretical of essays",
+          "theoretical of essays ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theoretical of essays"
+      },
+      {
+        "from": [
+          "theories of dom h",
+          "theories of dom h ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of dom h"
+      },
+      {
+        "from": [
+          "theory of performalme ",
+          "theory of performalme"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of performalme "
+      },
+      {
+        "from": [
+          "theory of poetic expression",
+          "theory of poetic expression "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of poetic expression"
+      },
+      {
+        "from": [
+          "theories of narrative games",
+          "theories of narrative games -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of narrative games"
+      },
+      {
+        "from": [
+          "theory of value ",
+          "theory of value"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of value "
+      },
+      {
+        "from": [
+          "theory of game",
+          "theory of game '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of game"
+      },
+      {
+        "from": [
+          "theories of '",
+          "theories of \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of '"
+      },
+      {
+        "from": [
+          "theory of signs one",
+          "theory of signs one of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of signs one"
+      },
+      {
+        "from": [
+          "theory of manifested NA",
+          "theory of manifested NA NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of manifested NA"
+      },
+      {
+        "from": [
+          "theorists of literature",
+          "theorists of literature ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of literature"
+      },
+      {
+        "from": [
+          "theories of digital communication",
+          "theories of digital communication "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of digital communication"
+      },
+      {
+        "from": [
+          "theorization of reading",
+          "theorization of reading of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorization of reading"
+      },
+      {
+        "from": [
+          "theorization of issues",
+          "theorization of issues ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorization of issues"
+      },
+      {
+        "from": [
+          "theory of interface inadequate",
+          "theory of interface inadequate ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of interface inadequate"
+      },
+      {
+        "from": [
+          "theorist of digital technology",
+          "theorist of digital technology ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorist of digital technology"
+      },
+      {
+        "from": [
+          "theories of new media",
+          "theories of new media "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of new media"
+      },
+      {
+        "from": [
+          "theories of subject enunciation",
+          "theories of subject enunciation "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of subject enunciation"
+      },
+      {
+        "from": [
+          "theory of community organizing",
+          "theory of community organizing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of community organizing"
+      },
+      {
+        "from": [
+          "theory of narrative structures",
+          "theory of narrative structures ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of narrative structures"
+      },
+      {
+        "from": [
+          "theory of music time",
+          "theory of music time ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of music time"
+      },
+      {
+        "from": [
+          "theory of vibrant matter",
+          "theory of vibrant matter "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of vibrant matter"
+      },
+      {
+        "from": [
+          "theory of acquaintance ",
+          "theory of acquaintance"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of acquaintance "
+      },
+      {
+        "from": [
+          "theory of syntax",
+          "theory of syntax ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of syntax"
+      },
+      {
+        "from": [
+          "theory of doctor ",
+          "theory of doctor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of doctor "
+      },
+      {
+        "from": [
+          "theories of narrative diverge",
+          "theories of narrative diverge "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of narrative diverge"
+      },
+      {
+        "from": [
+          "theory of word-formation ",
+          "theory of word-formation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of word-formation "
+      },
+      {
+        "from": [
+          "theories of computation ",
+          "theories of computation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of computation "
+      },
+      {
+        "from": [
+          "theory of structure",
+          "theory of structure of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of structure"
+      },
+      {
+        "from": [
+          "theories of modern art",
+          "theories of modern art "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of modern art"
+      },
+      {
+        "from": [
+          "theory of \\\" ideograph",
+          "theory of \\\" ideograph \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of \\\" ideograph"
+      },
+      {
+        "from": [
+          "theory of \\\" transition",
+          "theory of \\\" transition \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of \\\" transition"
+      },
+      {
+        "from": [
+          "theory of random selection",
+          "theory of random selection ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of random selection"
+      },
+      {
+        "from": [
+          "theory of novel . NA",
+          "theory of novel \\\" NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of novel . NA"
+      },
+      {
+        "from": [
+          "theory of concept critique",
+          "theory of concept critique of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of concept critique"
+      },
+      {
+        "from": [
+          "theory of skill acquisition",
+          "theory of skill acquisition "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of skill acquisition"
+      },
+      {
+        "from": [
+          "theory of transformational grammar",
+          "theory of transformational grammar ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of transformational grammar"
+      },
+      {
+        "from": [
+          "theory of human psyche",
+          "theory of human psyche "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of human psyche"
+      },
+      {
+        "from": [
+          "theories of social sciences",
+          "theories of social sciences ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of social sciences"
+      },
+      {
+        "from": [
+          "theories of language use",
+          "theories of language use "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of language use"
+      },
+      {
+        "from": [
+          "theories of games ",
+          "theories of games"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of games "
+      },
+      {
+        "from": [
+          "theory of book",
+          "theory of book of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of book"
+      },
+      {
+        "from": [
+          "theory of optics radiation",
+          "theory of optics radiation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of optics radiation"
+      },
+      {
+        "from": [
+          "theory of idiolectal co-selection",
+          "theory of idiolectal co-selection ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of idiolectal co-selection"
+      },
+      {
+        "from": [
+          "theory of chronometry ",
+          "theory of chronometry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of chronometry "
+      },
+      {
+        "from": [
+          "theory of semantic-pragmatic coherence",
+          "theory of semantic-pragmatic coherence of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of semantic-pragmatic coherence"
+      },
+      {
+        "from": [
+          "theory of style rhetoric",
+          "theory of style rhetoric ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of style rhetoric"
+      },
+      {
+        "from": [
+          "theories of transformational-generative grammar",
+          "theories of transformational-generative grammar ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of transformational-generative grammar"
+      },
+      {
+        "from": [
+          "theories of mid twentieth-century",
+          "theories of mid twentieth-century -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of mid twentieth-century"
+      },
+      {
+        "from": [
+          "theory of distant viewing",
+          "theory of distant viewing -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of distant viewing"
+      },
+      {
+        "from": [
+          "theory of thompson",
+          "theory of thompson ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of thompson"
+      },
+      {
+        "from": [
+          "theory of dynamical systems",
+          "theory of dynamical systems "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of dynamical systems"
+      },
+      {
+        "from": [
+          "theory of punctuation",
+          "theory of punctuation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of punctuation"
+      },
+      {
+        "from": [
+          "theories of cohesion",
+          "theories of cohesion ?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of cohesion"
+      },
+      {
+        "from": [
+          "theories of stuart hall",
+          "theories of stuart hall ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of stuart hall"
+      },
+      {
+        "from": [
+          "theory of category paradigm",
+          "theory of category paradigm of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of category paradigm"
+      },
+      {
+        "from": [
+          "theory of word emotionality",
+          "theory of word emotionality "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of word emotionality"
+      },
+      {
+        "from": [
+          "theory of practice",
+          "theory of practice ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of practice"
+      },
+      {
+        "from": [
+          "theory of stratification",
+          "theory of stratification ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of stratification"
+      },
+      {
+        "from": [
+          "theorization of concept",
+          "theorization of concept of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorization of concept"
+      },
+      {
+        "from": [
+          "theorists of technology",
+          "theorists of technology ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of technology"
+      },
+      {
+        "from": [
+          "theory of pragmatism",
+          "theory of pragmatism ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of pragmatism"
+      },
+      {
+        "from": [
+          "theory of metaphor know",
+          "theory of metaphor know of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of metaphor know"
+      },
+      {
+        "from": [
+          "theory of \\\" ergodic literature",
+          "theory of ergodic literature"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of \\\" ergodic literature"
+      },
+      {
+        "from": [
+          "theorisations of browsing outlined",
+          "theorisations of browsing outlined "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorisations of browsing outlined"
+      },
+      {
+        "from": [
+          "theory of grammar advocates",
+          "theory of grammar advocates of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of grammar advocates"
+      },
+      {
+        "from": [
+          "theory of minimization",
+          "theory of minimization of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of minimization"
+      },
+      {
+        "from": [
+          "theories of play poetry",
+          "theories of play poetry ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of play poetry"
+      },
+      {
+        "from": [
+          "theory of digital text",
+          "theory of digital text ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of digital text"
+      },
+      {
+        "from": [
+          "theory of conservation",
+          "theory of conservation ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of conservation"
+      },
+      {
+        "from": [
+          "theorizations of distributed cognition",
+          "theorizations of distributed cognition ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorizations of distributed cognition"
+      },
+      {
+        "from": [
+          "theories of passions",
+          "theories of passions ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of passions"
+      },
+      {
+        "from": [
+          "theorists of information ",
+          "theorists of information"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of information "
+      },
+      {
+        "from": [
+          "theory of digital media",
+          "theory of digital media ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of digital media"
+      },
+      {
+        "from": [
+          "theory of meaning includes",
+          "theory of meaning includes '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of meaning includes"
+      },
+      {
+        "from": [
+          "theory of educational moos",
+          "theory of educational moos ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of educational moos"
+      },
+      {
+        "from": [
+          "theories of materiality n",
+          "theories of materiality n ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of materiality n"
+      },
+      {
+        "from": [
+          "theories of music",
+          "theories of music ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of music"
+      },
+      {
+        "from": [
+          "theory of text types",
+          "theory of text types ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of text types"
+      },
+      {
+        "from": [
+          "theory of domain ",
+          "theory of domain"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of domain "
+      },
+      {
+        "from": [
+          "theory of \\\" genius",
+          "theory of \\\" genius \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of genius"
+      },
+      {
+        "from": [
+          "theory of inference memory",
+          "theory of inference memory ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of inference memory"
+      },
+      {
+        "from": [
+          "theories of copy-text ",
+          "theories of copy-text"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of copy-text "
+      },
+      {
+        "from": [
+          "theory of south asian",
+          "theory of south asian '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of south asian"
+      },
+      {
+        "from": [
+          "theory of narrative focalization",
+          "theory of narrative focalization "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of narrative focalization"
+      },
+      {
+        "from": [
+          "theory of alienation",
+          "theory of alienation of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of alienation"
+      },
+      {
+        "from": [
+          "theory of indices ",
+          "theory of indices"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of indices "
+      },
+      {
+        "from": [
+          "theories of twentieth-century art",
+          "theories of twentieth-century art "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of twentieth-century art"
+      },
+      {
+        "from": [
+          "theorist of hypertext ",
+          "theorist of hypertext"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorist of hypertext "
+      },
+      {
+        "from": [
+          "theory of lexical knowledge",
+          "theory of lexical knowledge \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of lexical knowledge"
+      },
+      {
+        "from": [
+          "theories of governmentality ",
+          "theories of governmentality"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of governmentality "
+      },
+      {
+        "from": [
+          "theories of late 1900s",
+          "theories of late 1900s "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of late 1900s"
+      },
+      {
+        "from": [
+          "theory of popular religion",
+          "theory of popular religion -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of popular religion"
+      },
+      {
+        "from": [
+          "theory of verification",
+          "theory of verification of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of verification"
+      },
+      {
+        "from": [
+          "theories of period",
+          "theories of period ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of period"
+      },
+      {
+        "from": [
+          "theories of document",
+          "theories of document ?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of document"
+      },
+      {
+        "from": [
+          "theory of narrative structure",
+          "theory of narrative structure ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of narrative structure"
+      },
+      {
+        "from": [
+          "theory of deviser ",
+          "theory of deviser"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of deviser "
+      },
+      {
+        "from": [
+          "theory of reference ",
+          "theory of reference"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of reference "
+      },
+      {
+        "from": [
+          "theories of gender sexuality",
+          "theories of gender sexuality "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of gender sexuality"
+      },
+      {
+        "from": [
+          "theories of visual semiotics",
+          "theories of visual semiotics "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of visual semiotics"
+      },
+      {
+        "from": [
+          "theory of montage-as-collision ",
+          "theory of montage-as-collision"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of montage-as-collision "
+      },
+      {
+        "from": [
+          "theory of aesthetic",
+          "theory of aesthetic ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of aesthetic"
+      },
+      {
+        "from": [
+          "theory of so-called",
+          "theory of so-called '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of so-called"
+      },
+      {
+        "from": [
+          "theories of case ",
+          "theories of case"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of case "
+      },
+      {
+        "from": [
+          "theories of communicative competence",
+          "theories of communicative competence ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of communicative competence"
+      },
+      {
+        "from": [
+          "theories of salvation ",
+          "theories of salvation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of salvation "
+      },
+      {
+        "from": [
+          "theory of numbers ",
+          "theory of numbers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of numbers "
+      },
+      {
+        "from": [
+          "theory of art ",
+          "theory of art"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of art "
+      },
+      {
+        "from": [
+          "theories of long-run development",
+          "theories of long-run development "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of long-run development"
+      },
+      {
+        "from": [
+          "theory of annotation ",
+          "theory of annotation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of annotation "
+      },
+      {
+        "from": [
+          "theories of computer coding",
+          "theories of computer coding "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of computer coding"
+      },
+      {
+        "from": [
+          "theory of genre ",
+          "theory of genre"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of genre "
+      },
+      {
+        "from": [
+          "theory of syntactic change",
+          "theory of syntactic change ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of syntactic change"
+      },
+      {
+        "from": [
+          "theory of constitutes influence",
+          "theory of constitutes influence of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of constitutes influence"
+      },
+      {
+        "from": [
+          "theory of content analysis",
+          "theory of content analysis \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of content analysis"
+      },
+      {
+        "from": [
+          "theories of computer analysis",
+          "theories of computer analysis )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of computer analysis"
+      },
+      {
+        "from": [
+          "theory of posthuman ",
+          "theory of posthuman"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of posthuman "
+      },
+      {
+        "from": [
+          "theories of \\\" natural",
+          "theories of natural"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of \\\" natural"
+      },
+      {
+        "from": [
+          "theory of human capacities",
+          "theory of human capacities "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of human capacities"
+      },
+      {
+        "from": [
+          "theory of jean piaget",
+          "theory of jean piaget ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of jean piaget"
+      },
+      {
+        "from": [
+          "theory of hardware software",
+          "theory of hardware software "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of hardware software"
+      },
+      {
+        "from": [
+          "theories of utopia",
+          "theories of utopia ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of utopia"
+      },
+      {
+        "from": [
+          "theorist of mothering",
+          "theorist of mothering ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorist of mothering"
+      },
+      {
+        "from": [
+          "theory of ceccato ",
+          "theory of ceccato"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ceccato "
+      },
+      {
+        "from": [
+          "theory of disruptive innovation",
+          "theory of disruptive innovation "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of disruptive innovation"
+      },
+      {
+        "from": [
+          "theories of gender representation",
+          "theories of gender representation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of gender representation"
+      },
+      {
+        "from": [
+          "theory of feature structures",
+          "theory of feature structures ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of feature structures"
+      },
+      {
+        "from": [
+          "theory of evaluation",
+          "theory of evaluation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of evaluation"
+      },
+      {
+        "from": [
+          "theory of generative grammar",
+          "theory of generative grammar ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of generative grammar"
+      },
+      {
+        "from": [
+          "theory of relativity 1905",
+          "theory of relativity 1905 ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of relativity 1905"
+      },
+      {
+        "from": [
+          "theory of formalism ",
+          "theory of formalism"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of formalism "
+      },
+      {
+        "from": [
+          "theory of phonetic development",
+          "theory of phonetic development ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of phonetic development"
+      },
+      {
+        "from": [
+          "theory of grammar teaching",
+          "theory of grammar teaching of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of grammar teaching"
+      },
+      {
+        "from": [
+          "theory of engineering",
+          "theory of engineering of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of engineering"
+      },
+      {
+        "from": [
+          "theory of grammars",
+          "theory of grammars ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of grammars"
+      },
+      {
+        "from": [
+          "theory of streaming media",
+          "theory of streaming media ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of streaming media"
+      },
+      {
+        "from": [
+          "theory of vision NA",
+          "theory of vision NA NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of vision NA"
+      },
+      {
+        "from": [
+          "theories of communication technology",
+          "theories of communication technology ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of communication technology"
+      },
+      {
+        "from": [
+          "theory of meter ",
+          "theory of meter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of meter "
+      },
+      {
+        "from": [
+          "theory of acquisition",
+          "theory of acquisition of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of acquisition"
+      },
+      {
+        "from": [
+          "theories of mannheim ",
+          "theories of mannheim"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of mannheim "
+      },
+      {
+        "from": [
+          "theories of counts knowing",
+          "theories of counts knowing \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of counts knowing"
+      },
+      {
+        "from": [
+          "theory of humoral pathology",
+          "theory of humoral pathology "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of humoral pathology"
+      },
+      {
+        "from": [
+          "theories of mental representations",
+          "theories of mental representations of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of mental representations"
+      },
+      {
+        "from": [
+          "theory of morphology ",
+          "theory of morphology"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of morphology "
+      },
+      {
+        "from": [
+          "theory of conjecture desideratum",
+          "theory of conjecture desideratum of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of conjecture desideratum"
+      },
+      {
+        "from": [
+          "theory of linguistic deso'iption",
+          "theory of linguistic deso'iption ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of linguistic deso'iption"
+      },
+      {
+        "from": [
+          "theories of text ways",
+          "theories of text ways of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of text ways"
+      },
+      {
+        "from": [
+          "theorems of theory",
+          "theorems of theory ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorems of theory"
+      },
+      {
+        "from": [
+          "theory of sciences ",
+          "theory of sciences"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of sciences "
+      },
+      {
+        "from": [
+          "theories of brain",
+          "theories of brain /"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of brain"
+      },
+      {
+        "from": [
+          "theory of acousmatics ",
+          "theory of acousmatics"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of acousmatics "
+      },
+      {
+        "from": [
+          "theories of aurality",
+          "theories of aurality ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of aurality"
+      },
+      {
+        "from": [
+          "theory of kr",
+          "theory of kr ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of kr"
+      },
+      {
+        "from": [
+          "theory of no-growth ",
+          "theory of no-growth"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of no-growth "
+      },
+      {
+        "from": [
+          "theory of speech writing",
+          "theory of speech writing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of speech writing"
+      },
+      {
+        "from": [
+          "theory of modern",
+          "theory of modern \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of modern"
+      },
+      {
+        "from": [
+          "theory of textual analysis",
+          "theory of textual analysis "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of textual analysis"
+      },
+      {
+        "from": [
+          "theory of conversational networks",
+          "theory of conversational networks "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of conversational networks"
+      },
+      {
+        "from": [
+          "theories of digital art",
+          "theories of digital art :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of digital art"
+      },
+      {
+        "from": [
+          "theories of complex temporalities",
+          "theories of complex temporalities "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of complex temporalities"
+      },
+      {
+        "from": [
+          "theory of multimodal literacy",
+          "theory of multimodal literacy ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of multimodal literacy"
+      },
+      {
+        "from": [
+          "theory of superiority complex",
+          "theory of superiority complex "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of superiority complex"
+      },
+      {
+        "from": [
+          "theories of survey archaeology",
+          "theories of survey archaeology ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of survey archaeology"
+      },
+      {
+        "from": [
+          "theory of descriptive esthetics",
+          "theory of descriptive esthetics ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of descriptive esthetics"
+      },
+      {
+        "from": [
+          "theory of language structure",
+          "theory of language structure ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language structure"
+      },
+      {
+        "from": [
+          "theories of validity",
+          "theories of validity of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of validity"
+      },
+      {
+        "from": [
+          "theory of grammar outlined",
+          "theory of grammar outlined of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of grammar outlined"
+      },
+      {
+        "from": [
+          "theories of wittgenstein ",
+          "theories of wittgenstein"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of wittgenstein "
+      },
+      {
+        "from": [
+          "theory of one text",
+          "theory of one text ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of one text"
+      },
+      {
+        "from": [
+          "theory of language means",
+          "theory of language means of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language means"
+      },
+      {
+        "from": [
+          "theories of relativity emergence",
+          "theories of relativity emergence of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of relativity emergence"
+      },
+      {
+        "from": [
+          "theorist of readerly visuality",
+          "theorist of readerly visuality "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorist of readerly visuality"
+      },
+      {
+        "from": [
+          "theory of modeling cai",
+          "theory of modeling cai ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of modeling cai"
+      },
+      {
+        "from": [
+          "theory of rumors",
+          "theory of rumors of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of rumors"
+      },
+      {
+        "from": [
+          "theory of justification",
+          "theory of justification ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of justification"
+      },
+      {
+        "from": [
+          "theory of mediation",
+          "theory of mediation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mediation"
+      },
+      {
+        "from": [
+          "theory of \\\" strong",
+          "theory of \\\" strong \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of \\\" strong"
+      },
+      {
+        "from": [
+          "theory of mind novel",
+          "theory of mind novel ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mind novel"
+      },
+      {
+        "from": [
+          "theory of language translation",
+          "theory of language translation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language translation"
+      },
+      {
+        "from": [
+          "theory of questions answers",
+          "theory of questions answers "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of questions answers"
+      },
+      {
+        "from": [
+          "theory of particularly",
+          "theory of particularly '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of particularly"
+      },
+      {
+        "from": [
+          "theory of predication",
+          "theory of predication ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of predication"
+      },
+      {
+        "from": [
+          "theories of computer games",
+          "theories of computer games ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of computer games"
+      },
+      {
+        "from": [
+          "theories of electronic literacy",
+          "theories of electronic literacy theories"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of electronic literacy"
+      },
+      {
+        "from": [
+          "theories of multimedia learning",
+          "theories of multimedia learning ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of multimedia learning"
+      },
+      {
+        "from": [
+          "theory of reasons ",
+          "theory of reasons"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of reasons "
+      },
+      {
+        "from": [
+          "theory of dynamic systems",
+          "theory of dynamic systems ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of dynamic systems"
+      },
+      {
+        "from": [
+          "theory of colors",
+          "theory of colors ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of colors"
+      },
+      {
+        "from": [
+          "theory of deviant word",
+          "theory of deviant word ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of deviant word"
+      },
+      {
+        "from": [
+          "theory of called",
+          "theory of called \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of called"
+      },
+      {
+        "from": [
+          "theory of c",
+          "theory of c ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of c"
+      },
+      {
+        "from": [
+          "theory of narrative evolution",
+          "theory of narrative evolution -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of narrative evolution"
+      },
+      {
+        "from": [
+          "theories of currency flow",
+          "theories of currency flow "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of currency flow"
+      },
+      {
+        "from": [
+          "theory of self-orientation",
+          "theory of self-orientation of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of self-orientation"
+      },
+      {
+        "from": [
+          "theories of intersectionality",
+          "theories of intersectionality ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of intersectionality"
+      },
+      {
+        "from": [
+          "theories of schank abelson",
+          "theories of schank abelson ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of schank abelson"
+      },
+      {
+        "from": [
+          "theory of 1817 role",
+          "theory of 1817 role of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of 1817 role"
+      },
+      {
+        "from": [
+          "theory of folktale structure",
+          "theory of folktale structure "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of folktale structure"
+      },
+      {
+        "from": [
+          "theory of molecular evolution",
+          "theory of molecular evolution ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of molecular evolution"
+      },
+      {
+        "from": [
+          "theoreticians of variationist grammar",
+          "theoreticians of variationist grammar ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theoreticians of variationist grammar"
+      },
+      {
+        "from": [
+          "theory of semantics",
+          "theory of semantics of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of semantics"
+      },
+      {
+        "from": [
+          "theory of discourse structures",
+          "theory of discourse structures ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of discourse structures"
+      },
+      {
+        "from": [
+          "theory of mirth",
+          "theory of mirth ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mirth"
+      },
+      {
+        "from": [
+          "theory of making",
+          "theory of making of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of making"
+      },
+      {
+        "from": [
+          "theories of development",
+          "theories of development ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of development"
+      },
+      {
+        "from": [
+          "theories of modern physics",
+          "theories of modern physics "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of modern physics"
+      },
+      {
+        "from": [
+          "theory of english word",
+          "theory of english word ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of english word"
+      },
+      {
+        "from": [
+          "theories of deep structure",
+          "theories of deep structure ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of deep structure"
+      },
+      {
+        "from": [
+          "theory of critical elections",
+          "theory of critical elections "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of critical elections"
+      },
+      {
+        "from": [
+          "theory of information systems",
+          "theory of information systems "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of information systems"
+      },
+      {
+        "from": [
+          "theory of systems",
+          "theory of systems \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of systems"
+      },
+      {
+        "from": [
+          "theory of natural language",
+          "theory of natural language ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of natural language"
+      },
+      {
+        "from": [
+          "theory of idiolect ",
+          "theory of idiolect"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of idiolect "
+      },
+      {
+        "from": [
+          "theory of instruction ",
+          "theory of instruction"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of instruction "
+      },
+      {
+        "from": [
+          "theory of essentially",
+          "theory of essentially '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of essentially"
+      },
+      {
+        "from": [
+          "theories of gender technology",
+          "theories of gender technology "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of gender technology"
+      },
+      {
+        "from": [
+          "theory of koskenniemi",
+          "theory of koskenniemi ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of koskenniemi"
+      },
+      {
+        "from": [
+          "theory of field ",
+          "theory of field"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of field "
+      },
+      {
+        "from": [
+          "theory of multimedia learning",
+          "theory of multimedia learning "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of multimedia learning"
+      },
+      {
+        "from": [
+          "theories of e.g",
+          "theories of e.g ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of e.g"
+      },
+      {
+        "from": [
+          "theories of feature",
+          "theories of feature ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of feature"
+      },
+      {
+        "from": [
+          "theorists of new media",
+          "theorists of new media "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of new media"
+      },
+      {
+        "from": [
+          "theory of reader-response terms",
+          "theory of reader-response terms of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of reader-response terms"
+      },
+      {
+        "from": [
+          "theorization of early modern",
+          "theorization of early modern \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorization of early modern"
+      },
+      {
+        "from": [
+          "theory of meter use",
+          "theory of meter use ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of meter use"
+      },
+      {
+        "from": [
+          "theory of ' unity",
+          "theory of ' unity of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ' unity"
+      },
+      {
+        "from": [
+          "theory of mt ",
+          "theory of mt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mt "
+      },
+      {
+        "from": [
+          "theory of semantic networking",
+          "theory of semantic networking ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of semantic networking"
+      },
+      {
+        "from": [
+          "theory of directed perception",
+          "theory of directed perception "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of directed perception"
+      },
+      {
+        "from": [
+          "theory of visuality NA",
+          "theory of visuality NA NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of visuality NA"
+      },
+      {
+        "from": [
+          "theory of baudrillard ",
+          "theory of baudrillard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of baudrillard "
+      },
+      {
+        "from": [
+          "theory of christaller ",
+          "theory of christaller"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of christaller "
+      },
+      {
+        "from": [
+          "theory of culture ",
+          "theory of culture"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of culture "
+      },
+      {
+        "from": [
+          "theory of directed graphs",
+          "theory of directed graphs ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of directed graphs"
+      },
+      {
+        "from": [
+          "theories of spaces",
+          "theories of spaces ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of spaces"
+      },
+      {
+        "from": [
+          "theory of aesthetics ",
+          "theory of aesthetics"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of aesthetics "
+      },
+      {
+        "from": [
+          "theory of understanding",
+          "theory of understanding ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of understanding"
+      },
+      {
+        "from": [
+          "theory of browsing",
+          "theory of browsing ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of browsing"
+      },
+      {
+        "from": [
+          "theories of storing retrieval",
+          "theories of storing retrieval "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of storing retrieval"
+      },
+      {
+        "from": [
+          "theories of barthes ",
+          "theories of barthes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of barthes "
+      },
+      {
+        "from": [
+          "theorists of older ",
+          "theorists of older"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of older "
+      },
+      {
+        "from": [
+          "theories of discourse structure",
+          "theories of discourse structure ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of discourse structure"
+      },
+      {
+        "from": [
+          "theory of primitives",
+          "theory of primitives of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of primitives"
+      },
+      {
+        "from": [
+          "theory of communication presupposes",
+          "theory of communication presupposes theory"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of communication presupposes"
+      },
+      {
+        "from": [
+          "theories of composition ",
+          "theories of composition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of composition "
+      },
+      {
+        "from": [
+          "theorists of electronic textuality",
+          "theorists of electronic textuality -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of electronic textuality"
+      },
+      {
+        "from": [
+          "theories of names",
+          "theories of names '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of names"
+      },
+      {
+        "from": [
+          "theories of tutoring ",
+          "theories of tutoring"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of tutoring "
+      },
+      {
+        "from": [
+          "theory of tei's interchangeability",
+          "theory of tei's interchangeability -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of tei's interchangeability"
+      },
+      {
+        "from": [
+          "theory of literary experience",
+          "theory of literary experience "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of literary experience"
+      },
+      {
+        "from": [
+          "theory of vision ",
+          "theory of vision"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of vision "
+      },
+      {
+        "from": [
+          "theory of graphic design",
+          "theory of graphic design "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of graphic design"
+      },
+      {
+        "from": [
+          "theory of \\\" frames",
+          "theory of \\\" frames \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of frames"
+      },
+      {
+        "from": [
+          "theory of texts general",
+          "theory of texts general ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of texts general"
+      },
+      {
+        "from": [
+          "theory of poetic devices",
+          "theory of poetic devices ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of poetic devices"
+      },
+      {
+        "from": [
+          "theorist of \\\" anti-patriarchal",
+          "theorist of \\\" anti-patriarchal \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorist of anti-patriarchal"
+      },
+      {
+        "from": [
+          "theory of grammar ",
+          "theory of grammar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of grammar "
+      },
+      {
+        "from": [
+          "theory of modernist conjectures",
+          "theory of modernist conjectures ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of modernist conjectures"
+      },
+      {
+        "from": [
+          "theory of stylistics ",
+          "theory of stylistics"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of stylistics "
+      },
+      {
+        "from": [
+          "theory of subjectivity ",
+          "theory of subjectivity"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of subjectivity "
+      },
+      {
+        "from": [
+          "theories of scholarly editing",
+          "theories of scholarly editing ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of scholarly editing"
+      },
+      {
+        "from": [
+          "theory of presidential agency",
+          "theory of presidential agency ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of presidential agency"
+      },
+      {
+        "from": [
+          "theory of c:m ratios",
+          "theory of c:m ratios ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of c:m ratios"
+      },
+      {
+        "from": [
+          "theory of han4-zi4 study",
+          "theory of han4-zi4 study "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of han4-zi4 study"
+      },
+      {
+        "from": [
+          "theory of speech acts",
+          "theory of speech acts :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of speech acts"
+      },
+      {
+        "from": [
+          "theories of stress english",
+          "theories of stress english ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of stress english"
+      },
+      {
+        "from": [
+          "theory of conversation ",
+          "theory of conversation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of conversation "
+      },
+      {
+        "from": [
+          "theories of world ",
+          "theories of world"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of world "
+      },
+      {
+        "from": [
+          "theories of editorial practice",
+          "theories of editorial practice ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of editorial practice"
+      },
+      {
+        "from": [
+          "theory of rhythm use",
+          "theory of rhythm use of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of rhythm use"
+      },
+      {
+        "from": [
+          "theory of optics",
+          "theory of optics ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of optics"
+      },
+      {
+        "from": [
+          "theories of discovery learning",
+          "theories of discovery learning learning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of discovery learning"
+      },
+      {
+        "from": [
+          "theories of media control",
+          "theories of media control ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of media control"
+      },
+      {
+        "from": [
+          "theory of humour",
+          "theory of humour ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of humour"
+      },
+      {
+        "from": [
+          "theory of multimodal structure",
+          "theory of multimodal structure "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of multimodal structure"
+      },
+      {
+        "from": [
+          "theory of graphs linguistics",
+          "theory of graphs linguistics ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of graphs linguistics"
+      },
+      {
+        "from": [
+          "theory of origin",
+          "theory of origin of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of origin"
+      },
+      {
+        "from": [
+          "theory of hypertext ",
+          "theory of hypertext"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of hypertext "
+      },
+      {
+        "from": [
+          "theory of dreams ",
+          "theory of dreams"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of dreams "
+      },
+      {
+        "from": [
+          "theory of innovation action",
+          "theory of innovation action ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of innovation action"
+      },
+      {
+        "from": [
+          "theories of stephen krashen",
+          "theories of stephen krashen "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of stephen krashen"
+      },
+      {
+        "from": [
+          "theorizing of higher criticism",
+          "theorizing of higher criticism "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorizing of higher criticism"
+      },
+      {
+        "from": [
+          "theory of term discrimination",
+          "theory of term discrimination ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of term discrimination"
+      },
+      {
+        "from": [
+          "theory of first-generation e-texts",
+          "theory of first-generation e-texts ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of first-generation e-texts"
+      },
+      {
+        "from": [
+          "theories of meaning studies",
+          "theories of meaning studies of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of meaning studies"
+      },
+      {
+        "from": [
+          "theory of register variation",
+          "theory of register variation "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of register variation"
+      },
+      {
+        "from": [
+          "theory of social editing",
+          "theory of social editing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of social editing"
+      },
+      {
+        "from": [
+          "theory of electromagnetism ",
+          "theory of electromagnetism"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of electromagnetism "
+      },
+      {
+        "from": [
+          "theory of \\\" ergodic",
+          "theory of ergodic"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ergodic"
+      },
+      {
+        "from": [
+          "theory of political websites",
+          "theory of political websites ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of political websites"
+      },
+      {
+        "from": [
+          "theories of learning ",
+          "theories of learning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of learning "
+      },
+      {
+        "from": [
+          "theories of child learning",
+          "theories of child learning "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of child learning"
+      },
+      {
+        "from": [
+          "theory of media laws",
+          "theory of media laws of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of media laws"
+      },
+      {
+        "from": [
+          "theories of word meaning",
+          "theories of word meaning ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of word meaning"
+      },
+      {
+        "from": [
+          "theory of texts see",
+          "theory of texts see ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of texts see"
+      },
+      {
+        "from": [
+          "theory of frequent",
+          "theory of frequent ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of frequent"
+      },
+      {
+        "from": [
+          "theories of discourse",
+          "theories of discourse ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of discourse"
+      },
+      {
+        "from": [
+          "theorizations of utopia",
+          "theorizations of utopia ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorizations of utopia"
+      },
+      {
+        "from": [
+          "theory of ( automated",
+          "theory of \\\" automated"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of automated"
+      },
+      {
+        "from": [
+          "theory of spatial production",
+          "theory of spatial production ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of spatial production"
+      },
+      {
+        "from": [
+          "theories of variety",
+          "theories of variety of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of variety"
+      },
+      {
+        "from": [
+          "theory of moderation",
+          "theory of moderation :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of moderation"
+      },
+      {
+        "from": [
+          "theorizing of posthuman subject",
+          "theorizing of posthuman subject of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorizing of posthuman subject"
+      },
+      {
+        "from": [
+          "theory of stress",
+          "theory of stress ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of stress"
+      },
+      {
+        "from": [
+          "theory of computational linguistics",
+          "theory of computational linguistics ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of computational linguistics"
+      },
+      {
+        "from": [
+          "theory of historical computing",
+          "theory of historical computing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of historical computing"
+      },
+      {
+        "from": [
+          "theories of communication ",
+          "theories of communication"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of communication "
+      },
+      {
+        "from": [
+          "theories of allegory ",
+          "theories of allegory"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of allegory "
+      },
+      {
+        "from": [
+          "theory of human memory",
+          "theory of human memory "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of human memory"
+      },
+      {
+        "from": [
+          "theory of shape shading",
+          "theory of shape shading "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of shape shading"
+      },
+      {
+        "from": [
+          "theory of color",
+          "theory of color ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of color"
+      },
+      {
+        "from": [
+          "theory of use",
+          "theory of use of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of use"
+      },
+      {
+        "from": [
+          "theory of english nominalization",
+          "theory of english nominalization "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of english nominalization"
+      },
+      {
+        "from": [
+          "theory of tei",
+          "theory of tei ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of tei"
+      },
+      {
+        "from": [
+          "theories of composing process",
+          "theories of composing process ?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of composing process"
+      },
+      {
+        "from": [
+          "theorist of representative democracy",
+          "theorist of representative democracy "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorist of representative democracy"
+      },
+      {
+        "from": [
+          "theoriz-ers of hypertext",
+          "theoriz-ers of hypertext ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorizers of hypertext"
+      },
+      {
+        "from": [
+          "theory of memory ",
+          "theory of memory"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of memory "
+      },
+      {
+        "from": [
+          "theories of text design",
+          "theories of text design of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of text design"
+      },
+      {
+        "from": [
+          "theories of recognition ",
+          "theories of recognition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of recognition "
+      },
+      {
+        "from": [
+          "theory of translation ",
+          "theory of translation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of translation "
+      },
+      {
+        "from": [
+          "theory of four causes",
+          "theory of four causes "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of four causes"
+      },
+      {
+        "from": [
+          "theory of importance",
+          "theory of importance of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of importance"
+      },
+      {
+        "from": [
+          "theory of textuality",
+          "theory of textuality ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of textuality"
+      },
+      {
+        "from": [
+          "theories of work society",
+          "theories of work society "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of work society"
+      },
+      {
+        "from": [
+          "theory of mystical states",
+          "theory of mystical states ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mystical states"
+      },
+      {
+        "from": [
+          "theory of feedback poetry",
+          "theory of feedback poetry ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of feedback poetry"
+      },
+      {
+        "from": [
+          "theory of graphs ",
+          "theory of graphs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of graphs "
+      },
+      {
+        "from": [
+          "theories of letter writing",
+          "theories of letter writing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of letter writing"
+      },
+      {
+        "from": [
+          "theorists of text markup",
+          "theorists of text markup "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of text markup"
+      },
+      {
+        "from": [
+          "theory of analogy",
+          "theory of analogy ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of analogy"
+      },
+      {
+        "from": [
+          "theories of influence originality",
+          "theories of influence originality "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of influence originality"
+      },
+      {
+        "from": [
+          "theory of relational model",
+          "theory of relational model "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of relational model"
+      },
+      {
+        "from": [
+          "theory of texts design",
+          "theory of texts design of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of texts design"
+      },
+      {
+        "from": [
+          "theory of conceptual dependency",
+          "theory of conceptual dependency ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of conceptual dependency"
+      },
+      {
+        "from": [
+          "theory of evolution face",
+          "theory of evolution face of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of evolution face"
+      },
+      {
+        "from": [
+          "theory of tona#ty",
+          "theory of tona#ty ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of tona#ty"
+      },
+      {
+        "from": [
+          "theorists of 1980s 1990s",
+          "theorists of 1980s 1990s ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of 1980s 1990s"
+      },
+      {
+        "from": [
+          "theory of typographic form",
+          "theory of typographic form )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of typographic form"
+      },
+      {
+        "from": [
+          "theorists of discipline",
+          "theorists of discipline )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of discipline"
+      },
+      {
+        "from": [
+          "theories of epistemology ",
+          "theories of epistemology"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of epistemology "
+      },
+      {
+        "from": [
+          "theory of ( mental",
+          "theory of ( mental )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of mental"
+      },
+      {
+        "from": [
+          "theory of semantic fields",
+          "theory of semantic fields "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of semantic fields"
+      },
+      {
+        "from": [
+          "theory of electronic literature",
+          "theory of electronic literature "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of electronic literature"
+      },
+      {
+        "from": [
+          "theory of invariants terms",
+          "theory of invariants terms of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of invariants terms"
+      },
+      {
+        "from": [
+          "theory of rhetorical situation",
+          "theory of rhetorical situation -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of rhetorical situation"
+      },
+      {
+        "from": [
+          "theory of desire ",
+          "theory of desire"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of desire "
+      },
+      {
+        "from": [
+          "theory of either",
+          "theory of either ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of either"
+      },
+      {
+        "from": [
+          "theory of documentation ",
+          "theory of documentation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of documentation "
+      },
+      {
+        "from": [
+          "theories of morphology ",
+          "theories of morphology"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of morphology "
+      },
+      {
+        "from": [
+          "theory of tonal bass",
+          "theory of tonal bass ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of tonal bass"
+      },
+      {
+        "from": [
+          "theories of digital editing",
+          "theories of digital editing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of digital editing"
+      },
+      {
+        "from": [
+          "theories of finding arguments",
+          "theories of finding arguments "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of finding arguments"
+      },
+      {
+        "from": [
+          "theory of moral sentiments",
+          "theory of moral sentiments "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of moral sentiments"
+      },
+      {
+        "from": [
+          "theories of alan turing",
+          "theories of alan turing ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of alan turing"
+      },
+      {
+        "from": [
+          "theories of crowdsourcing",
+          "theories of crowdsourcing ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of crowdsourcing"
+      },
+      {
+        "from": [
+          "theory of j.j",
+          "theory of j.j ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of j.j"
+      },
+      {
+        "from": [
+          "theory of world",
+          "theory of world ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of world"
+      },
+      {
+        "from": [
+          "theory of textual features",
+          "theory of textual features "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of textual features"
+      },
+      {
+        "from": [
+          "theories of feminism ",
+          "theories of feminism"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of feminism "
+      },
+      {
+        "from": [
+          "theory of numbers computability",
+          "theory of numbers computability ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of numbers computability"
+      },
+      {
+        "from": [
+          "theory of historicity ",
+          "theory of historicity"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of historicity "
+      },
+      {
+        "from": [
+          "theories of jacques derrida",
+          "theories of jacques derrida "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of jacques derrida"
+      },
+      {
+        "from": [
+          "theory of comprehension",
+          "theory of comprehension ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of comprehension"
+      },
+      {
+        "from": [
+          "theory of styles abstract",
+          "theory of styles abstract :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of styles abstract"
+      },
+      {
+        "from": [
+          "theory of ordering",
+          "theory of ordering ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ordering"
+      },
+      {
+        "from": [
+          "theorists of language ",
+          "theorists of language"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of language "
+      },
+      {
+        "from": [
+          "theory of cognitive dissonance",
+          "theory of cognitive dissonance )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of cognitive dissonance"
+      },
+      {
+        "from": [
+          "theorists of colloquial ",
+          "theorists of colloquial"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of colloquial "
+      },
+      {
+        "from": [
+          "theory of relevance",
+          "theory of relevance ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of relevance"
+      },
+      {
+        "from": [
+          "theories of linguistic performance",
+          "theories of linguistic performance '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of linguistic performance"
+      },
+      {
+        "from": [
+          "theory of suspensions",
+          "theory of suspensions ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of suspensions"
+      },
+      {
+        "from": [
+          "theory of punctuation born",
+          "theory of punctuation born "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of punctuation born"
+      },
+      {
+        "from": [
+          "theory of event structure",
+          "theory of event structure "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of event structure"
+      },
+      {
+        "from": [
+          "theories of truth",
+          "theories of truth ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of truth"
+      },
+      {
+        "from": [
+          "theory of sexual selection",
+          "theory of sexual selection "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of sexual selection"
+      },
+      {
+        "from": [
+          "theory of language NA",
+          "theory of language NA NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language NA"
+      },
+      {
+        "from": [
+          "theory of scholarly editing",
+          "theory of scholarly editing "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of scholarly editing"
+      },
+      {
+        "from": [
+          "theory of modeling possible",
+          "theory of modeling possible "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of modeling possible"
+      },
+      {
+        "from": [
+          "theory of soul ",
+          "theory of soul"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of soul "
+      },
+      {
+        "from": [
+          "theory of context-free languages",
+          "theory of context-free languages ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of context-free languages"
+      },
+      {
+        "from": [
+          "theory of solution used",
+          "theory of solution used ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of solution used"
+      },
+      {
+        "from": [
+          "theory of literary work",
+          "theory of literary work "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of literary work"
+      },
+      {
+        "from": [
+          "theory of determinants",
+          "theory of determinants ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of determinants"
+      },
+      {
+        "from": [
+          "theories of literary characters",
+          "theories of literary characters ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of literary characters"
+      },
+      {
+        "from": [
+          "theory of learning NA",
+          "theory of learning NA NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of learning"
+      },
+      {
+        "from": [
+          "theory of action",
+          "theory of action ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of action"
+      },
+      {
+        "from": [
+          "theory of collective action",
+          "theory of collective action :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of collective action"
+      },
+      {
+        "from": [
+          "theory of procedural rhetoric",
+          "theory of procedural rhetoric ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of procedural rhetoric"
+      },
+      {
+        "from": [
+          "theory of language history",
+          "theory of language history of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language history"
+      },
+      {
+        "from": [
+          "theory of representation ",
+          "theory of representation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of representation "
+      },
+      {
+        "from": [
+          "theories of agent modelling",
+          "theories of agent modelling "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of agent modelling"
+      },
+      {
+        "from": [
+          "theories of human motivation",
+          "theories of human motivation "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of human motivation"
+      },
+      {
+        "from": [
+          "theory of word-distribution ",
+          "theory of word-distribution"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of word-distribution "
+      },
+      {
+        "from": [
+          "theories of human motive",
+          "theories of human motive "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of human motive"
+      },
+      {
+        "from": [
+          "theorization of archives",
+          "theorization of archives ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorization of archives"
+      },
+      {
+        "from": [
+          "theory of recursive functions",
+          "theory of recursive functions ("
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of recursive functions"
+      },
+      {
+        "from": [
+          "theory of \\\" heteroglossia",
+          "theory of \\\" heteroglossia \\\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of heteroglossia"
+      },
+      {
+        "from": [
+          "theories of lexical density",
+          "theories of lexical density "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of lexical density"
+      },
+      {
+        "from": [
+          "theories of targets ",
+          "theories of targets"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of targets "
+      },
+      {
+        "from": [
+          "theories of character descriptions",
+          "theories of character descriptions "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of character descriptions"
+      },
+      {
+        "from": [
+          "theories of digital technologies",
+          "theories of digital technologies ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of digital technologies"
+      },
+      {
+        "from": [
+          "theory of styles",
+          "theory of styles ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of styles"
+      },
+      {
+        "from": [
+          "theory of animating power",
+          "theory of animating power of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of animating power"
+      },
+      {
+        "from": [
+          "theory of class-based writing",
+          "theory of class-based writing ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of class-based writing"
+      },
+      {
+        "from": [
+          "theories of meaning power",
+          "theories of meaning power "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of meaning power"
+      },
+      {
+        "from": [
+          "theories of semantics",
+          "theories of semantics of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of semantics"
+      },
+      {
+        "from": [
+          "theory of ' conceptual",
+          "theory of conceptual"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of conceptual"
+      },
+      {
+        "from": [
+          "theory of optics holds",
+          "theory of optics holds "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of optics holds"
+      },
+      {
+        "from": [
+          "theory of human nature",
+          "theory of human nature of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of human nature"
+      },
+      {
+        "from": [
+          "theory of computational complexity",
+          "theory of computational complexity -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of computational complexity"
+      },
+      {
+        "from": [
+          "theorist of form",
+          "theorist of form of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorist of form"
+      },
+      {
+        "from": [
+          "theory of data ",
+          "theory of data"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of data "
+      },
+      {
+        "from": [
+          "theories of literary history",
+          "theories of literary history ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of literary history"
+      },
+      {
+        "from": [
+          "theories of text-encoding ",
+          "theories of text-encoding"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of text-encoding "
+      },
+      {
+        "from": [
+          "theory of call",
+          "theory of call ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of call"
+      },
+      {
+        "from": [
+          "theory of statistical stylistics",
+          "theory of statistical stylistics "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of statistical stylistics"
+      },
+      {
+        "from": [
+          "theories of dora h",
+          "theories of dora h ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of dora h"
+      },
+      {
+        "from": [
+          "theories of history novel",
+          "theories of history novel ?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of history novel"
+      },
+      {
+        "from": [
+          "theory of regular ",
+          "theory of regular"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of regular "
+      },
+      {
+        "from": [
+          "theory of algorithmic computation",
+          "theory of algorithmic computation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of algorithmic computation"
+      },
+      {
+        "from": [
+          "theory of arithmetic",
+          "theory of arithmetic ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of arithmetic"
+      },
+      {
+        "from": [
+          "theory of manuscript relationships",
+          "theory of manuscript relationships '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of manuscript relationships"
+      },
+      {
+        "from": [
+          "theory of ballad tradition",
+          "theory of ballad tradition -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ballad tradition"
+      },
+      {
+        "from": [
+          "theory of katz fodor",
+          "theory of katz fodor "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of katz fodor"
+      },
+      {
+        "from": [
+          "theory of models",
+          "theory of models :"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of models"
+      },
+      {
+        "from": [
+          "theory of montage ",
+          "theory of montage"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of montage "
+      },
+      {
+        "from": [
+          "theory of uncertainty ",
+          "theory of uncertainty"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of uncertainty "
+      },
+      {
+        "from": [
+          "theories of practitioners NA",
+          "theories of practitioners NA NA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of practitioners"
+      },
+      {
+        "from": [
+          "theories of sovereignty",
+          "theories of sovereignty -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of sovereignty"
+      },
+      {
+        "from": [
+          "theory of rhetorical presidency",
+          "theory of rhetorical presidency "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of rhetorical presidency"
+      },
+      {
+        "from": [
+          "theory of music director",
+          "theory of music director of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of music director"
+      },
+      {
+        "from": [
+          "theory of literature general",
+          "theory of literature general ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of literature general"
+      },
+      {
+        "from": [
+          "theory of consciousness terms",
+          "theory of consciousness terms of"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of consciousness terms"
+      },
+      {
+        "from": [
+          "theory of tropes anthropology",
+          "theory of tropes anthropology "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of tropes anthropology"
+      },
+      {
+        "from": [
+          "theories of human relationships",
+          "theories of human relationships "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of human relationships"
+      },
+      {
+        "from": [
+          "theories of task constraint",
+          "theories of task constraint ?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of task constraint"
+      },
+      {
+        "from": [
+          "theory of motivation ",
+          "theory of motivation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of motivation "
+      },
+      {
+        "from": [
+          "theory of set-complexes music",
+          "theory of set-complexes music "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of set-complexes music"
+      },
+      {
+        "from": [
+          "theory of computability",
+          "theory of computability ;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of computability"
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theory of learning ",
+          "theory of learning"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of learning "
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theories of social science",
+          "theories of social sciences"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of social science"
+      },
+      {
+        "from": [
+          "theory of oral formulaic",
+          "theory of oral-formulaic"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of oral formulaic"
+      },
+      {
+        "from": [
+          "theory of oral-formulaic composition",
+          "theory of oral formulaic composition"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of oral-formulaic composition"
+      },
+      {
+        "from": [
+          "theory of set complexes",
+          "theory of set-complexes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of set complexes"
+      },
+      {
+        "from": [
+          "theory of discourse structures",
+          "theory of discourse structure"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of discourse structures"
+      },
+      {
+        "from": [
+          "theories of handwriting hold",
+          "theories of handwriting hold writing"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of handwriting hold"
+      },
+      {
+        "from": [
+          "theories of narrative",
+          "theories of narratives"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of narrative"
+      },
+      {
+        "from": [
+          "theory of narrative structure",
+          "theory of narrative structures"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of narrative structure"
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "normalized_string",
+          "columnName": "normalized_string",
+          "query": " NA",
+          "mode": "text",
+          "caseSensitive": true,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value.replace(/ NA/i,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column normalized_string using expression value.replace(/ NA/i,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "normalized_string",
+          "columnName": "normalized_string",
+          "query": "\\\"",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value.replace(\"\\\\\\\"\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column normalized_string using expression value.replace(\"\\\\\\\"\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "query_string",
+          "columnName": "query_string",
+          "query": "\\\"",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column normalized_string using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theory of  rhetorical",
+          "theory of rhetorical"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of  rhetorical"
+      },
+      {
+        "from": [
+          "theory of .",
+          "theory of '"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of ."
+      },
+      {
+        "from": [
+          "theory of language ",
+          "theory of language"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of language "
+      },
+      {
+        "from": [
+          "theories of sign",
+          "theories of sign ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of sign"
+      },
+      {
+        "from": [
+          "theory of novel",
+          "theory of novel ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of novel"
+      },
+      {
+        "from": [
+          "theories of  natural language",
+          "theories of natural language"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of  natural language"
+      },
+      {
+        "from": [
+          "theory of punctuation",
+          "theory of punctuation ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of punctuation"
+      },
+      {
+        "from": [
+          "theory of practice",
+          "theory of practice ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of practice"
+      },
+      {
+        "from": [
+          "theorists of technology",
+          "theorists of technology ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorists of technology"
+      },
+      {
+        "from": [
+          "theory of  ergodic literature",
+          "theory of ergodic literature"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of  ergodic literature"
+      },
+      {
+        "from": [
+          "theories of period",
+          "theories of period ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of period"
+      },
+      {
+        "from": [
+          "theories of  natural",
+          "theories of natural"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of  natural"
+      },
+      {
+        "from": [
+          "theory of discourse ",
+          "theory of discourse ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of discourse "
+      },
+      {
+        "from": [
+          "theory of vision ",
+          "theory of vision"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of vision "
+      },
+      {
+        "from": [
+          "theory of frequent",
+          "theory of frequent ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of frequent"
+      },
+      {
+        "from": [
+          "theory of metaphor",
+          "theory of metaphor theory"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of metaphor"
+      },
+      {
+        "from": [
+          "theory of authorship",
+          "theory of authorship ."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of authorship"
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theories of social science",
+          "theories of social sciences"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of social science"
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "normalized_string",
+          "columnName": "normalized_string",
+          "query": "\\.\\d",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theories of passions . 2.2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of passions"
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "normalized_string",
+          "columnName": "normalized_string",
+          "query": "\\.\\s\\d{1}",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value.replace(\"\\\\.\\\\s\\\\d{1}\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column normalized_string using expression value.replace(\"\\\\.\\\\s\\\\d{1}\",\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "normalized_string",
+          "columnName": "normalized_string",
+          "query": "\\.\\s\\d{1}",
+          "mode": "regex",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value.replace(/\\.\\s\\d{1}/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column normalized_string using expression value.replace(/\\.\\s\\d{1}/,\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theories of personality",
+          "theories of personality "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theories of personality"
+      },
+      {
+        "from": [
+          "theory of literature ",
+          "theory of literature"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of literature "
+      },
+      {
+        "from": [
+          "theorems of theory",
+          "theorems of theory "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theorems of theory"
+      },
+      {
+        "from": [
+          "theory of markup ",
+          "theory of markup"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of markup "
+      },
+      {
+        "from": [
+          "theory of action",
+          "theory of action "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of action"
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "normalized_string",
+          "expression": "value",
+          "columnName": "normalized_string",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "theory of performance serves",
+                "l": "theory of performance serves"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performance thus closer",
+                "l": "theory of performance thus closer"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performance thus reinforced",
+                "l": "theory of performance thus reinforced"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performative materiality",
+                "l": "theory of performative materiality"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performalme ",
+                "l": "theory of performalme "
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performance serves purpose",
+                "l": "theory of performance serves purpose"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performance special reference",
+                "l": "theory of performance special reference"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performative",
+                "l": "theory of performative"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performative materiality potential",
+                "l": "theory of performative materiality potential"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performance ",
+                "l": "theory of performance "
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performance thus",
+                "l": "theory of performance thus"
+              }
+            },
+            {
+              "v": {
+                "v": "theory of performance special",
+                "l": "theory of performance special"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theory of performalme "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of performance"
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "normalized_string",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "theory of meaning "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "theory of meaning"
+      }
+    ],
+    "description": "Mass edit cells in column normalized_string"
+  }
+]
