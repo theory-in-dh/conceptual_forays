@@ -1,7 +1,10 @@
 import requests
 import pandas as pd
-string_filename = "theor_of.csv"
+import os
+
+string_filename = "data_normalization/theor_of_normalized.csv"
 df = pd.read_csv(string_filename)
+
 df_selection = df[df.freq >= 2]
 query_strings = df_selection["theory"].values.tolist()
 all_results_df = pd.DataFrame()
