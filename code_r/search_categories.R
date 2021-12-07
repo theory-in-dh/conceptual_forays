@@ -1,4 +1,5 @@
 library(tidyverse)
+
 ##### Functions #####
 
 #Taken from: https://github.com/wikimedia/WikidataQueryServiceR/issues/12
@@ -38,7 +39,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
 data <- readr::read_csv("https://raw.githubusercontent.com/eisioriginal/conceptual_forays/silvia-test-bed/data_api_queries/wikicategories_distances_filtered.csv")
 
 
-###### Apply query
+###### Apply query & create data frame ####
 queries_titles <- unique(data$title)
 queries <- purrr::map(queries_titles, .f=cat_query)
 
@@ -46,8 +47,9 @@ df <- tibble(
   category = queries_titles,
   data = purrr::map(queries, .f=querki))
 
+###### Unnest data ####
 df <- df %>% 
   unnest(data)
 
-
+###### Export to csv ####
 write_csv(df, "theory_categories_humans.csv")
