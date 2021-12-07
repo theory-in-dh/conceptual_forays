@@ -1,12 +1,19 @@
-library(stringr)
-library(httr)
-library(WikidataQueryServiceR)
-library(stringi)
-library(urltools)
+library(tidyverse)
+##### Functions #####
 
-query <- function(category){
-  query <- paste0( 'SELECT ?item ?itemLabel WHERE {
-  BIND("', category,'" as ?category)
+#Taken from: https://github.com/wikimedia/WikidataQueryServiceR/issues/12
+querki <- function(query,h="text/csv") {
+  require(httr)
+  response <- httr::GET(url = "https://query.wikidata.org/sparql", 
+                        query = list(query = query),
+                        httr::add_headers(Accept = h))
+  return(httr::content(response))
+}
+
+#Adapted from: https://github.com/lubianat/topictagger/blob/master/titlematch/utils.R
+cat_query <- function(category){
+  cat_query <- paste0('SELECT ?item ?itemLabel WHERE {
+  BIND("', category, '" as ?category)
   SERVICE wikibase:mwapi {
      bd:serviceParam wikibase:endpoint "en.wikipedia.org";
                      wikibase:api "Generator";
@@ -20,8 +27,21 @@ query <- function(category){
     ?item wdt:P31 wd:Q5.
   }
 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }    
-}')
-  return(query)
+}
+')
+  return(cat_query)
 }
 
-WikidataQueryServiceR::query_wikidata(query("Health effects of alcohol"))
+
+##### Load data ######
+
+data <- readr::read_csv("https://raw.githubusercontent.com/eisioriginal/conceptual_forays/silvia-test-bed/data_api_queries/wikicategories_distances_filtered.csv")
+
+
+###### Apply query
+queries_titles <- unique(data$title)
+queries <- purrr::map(queries_titles, .f=cat_query)
+
+df <- tibble(
+  category = queries_titles,
+  data = purrr::map(queries, .f=querki))
