@@ -45,3 +45,9 @@ queries <- purrr::map(queries_titles, .f=cat_query)
 df <- tibble(
   category = queries_titles,
   data = purrr::map(queries, .f=querki))
+
+df <- df %>% 
+  unnest(data)
+
+
+write_csv(df, "theory_categories_humans.csv")
