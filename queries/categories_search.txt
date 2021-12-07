@@ -1,0 +1,26 @@
+#Query by Silvia Gutiérrez (@espejolento)
+SELECT distinct ?theory ?theoryLabel ?category ?categoryLabel
+WHERE {
+  VALUES ?theory {
+wd:Q109790201
+wd:Q1143546
+wd:Q1321958
+wd:Q1479773
+wd:Q1791800
+wd:Q179235
+wd:Q180348
+wd:Q18880622
+wd:Q2466334
+wd:Q265425
+wd:Q267932
+wd:Q5186753
+wd:Q5625196
+wd:Q658022
+wd:Q7256338
+wd:Q742302
+wd:Q742779
+wd:Q86619995
+}
+   ?theory wdt:P910 ?category .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
