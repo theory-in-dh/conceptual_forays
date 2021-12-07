@@ -2,11 +2,11 @@ import requests
 import pandas as pd
 import os
 
-string_filename = "data_normalization/theor_of_normalized.csv"
+string_filename = "data_normalization/theor_of_normalized_unique.csv"
 df = pd.read_csv(string_filename)
-
-df_selection = df[df.freq >= 2]
-query_strings = df_selection["theory"].values.tolist()
+df
+#df_selection = df[df.freq >= 2]
+query_strings = df_selection["normalized_string"].values.tolist()
 all_results_df = pd.DataFrame()
 for query_string in query_strings:
     url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch={query_string}&srnamespace=14"
