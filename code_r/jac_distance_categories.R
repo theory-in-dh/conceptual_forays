@@ -5,8 +5,25 @@ library(readr)
 library(stringdist)
 #install.packages("wordcloud")
 library(wordcloud)
-
+theoriesof <- read_csv("data_normalization/theor_of_normalized_unique.csv") 
 categories_wikipedia <- read_csv("data_api_queries/categories_wikipedia.csv")
+length(unique(categories_wikipedia$title))
+title_count <- categories_wikipedia %>% 
+  count(title)
+esquisse::esquisser(category_count)
+ggplot(category_count) +
+  aes(x = count) +
+  geom_histogram(bins = 30L, fill = "#112446") +
+  labs(
+    title = "Histogram of dif. categories retrieved by query string",
+    caption = "By Silvia Gutiérrez"
+  ) +
+  theme_minimal()
+
+category_count <- categories_wikipedia %>%
+  group_by(query_string) %>%
+  summarise(count = n_distinct(title))
+
 categories_wikipedia <- categories_wikipedia %>% 
   mutate(category = stringr::str_replace_all(categories_wikipedia$title, "Category:", ""))
 categories_wikipedia_distances <- categories_wikipedia %>% 
@@ -16,8 +33,7 @@ categories_wikipedia_distances <- categories_wikipedia_distances %>%
   mutate(jac = unlist(jac),
          lev = unlist(lev))
 
-cat_count <- categories_wikipedia_distances %>% 
-  count(category)
+
 #### Categories wordcloud
 library(wordcloud)
 set.seed(1234)
