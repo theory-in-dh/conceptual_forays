@@ -8,6 +8,8 @@ library(wordcloud)
 theoriesof <- read_csv("data_normalization/theor_of_normalized_unique.csv") 
 categories_wikipedia <- read_csv("data_api_queries/categories_wikipedia.csv")
 length(unique(categories_wikipedia$title))
+length(unique(categories_wikipedia$query_string))
+
 title_count <- categories_wikipedia %>% 
   count(title)
 esquisse::esquisser(category_count)
@@ -52,7 +54,10 @@ wordcloud(words = cat_count_words$words, freq = cat_count_words$n, min.freq = 30
           max.words=100, random.order=FALSE, rot.per=0.35, 
           colors=brewer.pal(4, "Dark2"))
 
+df <- categories_wikipedia_distances %>% 
+  filter(jac < 0.6)
 
+length(unique(df$query_string))
 df <- categories_wikipedia_distances %>% 
   filter(jac < 0.6,
          !grepl('WikiProject|Wikipedia|[C|c]onspiracy|Christ|[M|m]ilitary|articles|journals|missing|Satanic|[T|t]errorism|abuse|backlog|Lists|albums', category),
