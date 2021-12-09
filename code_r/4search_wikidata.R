@@ -36,7 +36,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
 
 ##### Load data ######
 
-data <- readr::read_csv("wikicategories_distances_filtered.csv")
+data <- readr::read_csv("data_api_queries/wikicategories_distances_filtered.csv")
 
 
 ###### Apply query & create data frame ####
@@ -52,4 +52,10 @@ df <- df %>%
   unnest(data)
 
 ###### Export to csv ####
-write_csv(df, "theory_categories_humans.csv")
+write_csv(df, "data_reconciliation/theorystrings_categories_humans.csv")
+
+names(df)
+
+difitems <- df %>% 
+  count(itemLabel, sort = T)
+
