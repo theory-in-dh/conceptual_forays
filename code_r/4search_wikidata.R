@@ -36,7 +36,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
 
 ##### Load data ######
 
-data <- readr::read_csv("https://raw.githubusercontent.com/eisioriginal/conceptual_forays/silvia-test-bed/data_api_queries/wikicategories_distances_filtered.csv")
+data <- readr::read_csv("wikicategories_distances_filtered.csv")
 
 
 ###### Apply query & create data frame ####
