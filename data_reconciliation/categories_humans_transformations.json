@@ -1,0 +1,27 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "item",
+    "expression": "grel:value.split(\"/\")[-1]",
+    "onError": "set-to-blank",
+    "newColumnName": "q_id",
+    "columnInsertIndex": 2,
+    "description": "Create column q_id at index 2 based on column item using expression grel:value.split(\"/\")[-1]"
+  },
+  {
+    "op": "core/recon-use-values-as-identifiers",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "q_id",
+    "service": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "description": "Use values as reconciliation identifiers in column q_id"
+  }
+]
