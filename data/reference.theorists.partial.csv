@@ -1,0 +1,1217 @@
+"","keyword","tf","df"
+"1","Thomas",1243,553
+"2","James",1170,540
+"3","Smith",1289,505
+"4","Paul",969,470
+"5","Brown",1109,468
+"6","West",495,303
+"7","Martin",450,295
+"8","Washington",503,295
+"9","Still",405,278
+"10","King",758,269
+"11","Jones",488,256
+"12","Street",448,253
+"13","Johnson",483,236
+"14","Andrew",296,225
+"15","Lee",378,218
+"16","Louis",296,212
+"17","Allen",363,199
+"18","Robinson",496,180
+"19","Taylor",463,179
+"20","List",319,173
+"21","Miller",312,173
+"22","Anderson",346,172
+"23","Church",313,170
+"24","White",330,164
+"25","Alexander",277,162
+"26","Nancy",262,161
+"27","Scott",239,159
+"28","Williams",280,158
+"29","Man",295,153
+"30","Good",234,152
+"31","Samuel",245,148
+"32","Wilson",257,143
+"33","Lewis",327,142
+"34","Wallace",298,141
+"35","Law",312,140
+"36","Bell",252,133
+"37","Green",232,131
+"38","Joyce",388,130
+"39","Frank",191,129
+"40","Thompson",246,124
+"41","Main",176,122
+"42","Black",235,121
+"43","Day",277,121
+"44","Douglas",158,121
+"45","Harris",238,119
+"46","Grant",179,117
+"47","Austin",340,113
+"48","Price",244,111
+"49","Cohen",228,110
+"50","Davis",209,107
+"51","Cornell",171,106
+"52","Craig",223,104
+"53","Dean",140,104
+"54","Jackson",216,102
+"55","Bailey",168,98
+"56","Clark",170,97
+"57","Benjamin",197,96
+"58","Collins",249,95
+"59","Howard",163,94
+"60","Mitchell",137,92
+"61","Patrick",113,91
+"62","Dixon",124,88
+"63","Folio",225,88
+"64","Field",162,87
+"65","Evans",138,83
+"66","Moore",124,83
+"67","Sun",173,82
+"68","Wright",167,81
+"69","Muller",150,80
+"70","Ray",108,80
+"71","Eliot",138,77
+"72","Russell",109,76
+"73","Wells",195,75
+"74","Best",109,74
+"75","Shaw",173,74
+"76","Albert",100,73
+"77","Chomsky",143,72
+"78","Kim",126,72
+"79","Burton",115,71
+"80","Butler",112,71
+"81","Packard",130,71
+"82","Schmidt",125,71
+"83","Wall",143,70
+"84","Davies",118,69
+"85","Johansson",136,69
+"86","Power",145,68
+"87","Carroll",174,67
+"88","Wang",151,66
+"89","Morris",148,65
+"90","Klein",94,64
+"91","McKenzie",126,64
+"92","Campbell",127,63
+"93","Fisher",138,63
+"94","Woods",223,63
+"95","Bolter",314,61
+"96","Gilbert",93,61
+"97","Marlowe",598,61
+"98","Turner",116,61
+"99","Juan",136,60
+"100","Kelly",104,60
+"101","Leonard",70,60
+"102","Roberts",92,59
+"103","Ward",318,59
+"104","Newman",104,58
+"105","Warwick",122,58
+"106","Fraser",96,57
+"107","Kennedy",97,57
+"108","Parker",103,57
+"109","McCarthy",95,56
+"110","Landow",227,55
+"111","Winograd",102,54
+"112","Abraham",255,53
+"113","Franklin",77,53
+"114","Manovich",153,53
+"115","Post",112,53
+"116","Prince",93,53
+"117","Ott",101,51
+"118","Derrida",118,50
+"119","Gibson",185,50
+"120","Phillips",96,50
+"121","Foster",230,49
+"122","Hart",94,49
+"123","Knight",70,49
+"124","Rogers",89,49
+"125","Ellis",93,48
+"126","Foucault",105,48
+"127","Friedman",136,48
+"128","Richards",133,48
+"129","Spencer",109,48
+"130","Guy",55,47
+"131","Katz",70,47
+"132","Randall",59,47
+"133","Clarke",70,46
+"134","Levenshtein",222,46
+"135","Manning",74,46
+"136","Robertson",77,46
+"137","Burke",95,45
+"138","Heinrich",68,45
+"139","Wood",83,45
+"140","Land",81,44
+"141","Thomson",73,44
+"142","Greenberg",79,43
+"143","Harrison",78,43
+"144","Turing",71,43
+"145","Gale",64,42
+"146","Gray",115,42
+"147","Bacon",195,41
+"148","Cook",77,41
+"149","Harvey",81,41
+"150","Levin",89,41
+"151","Oliver",87,41
+"152","Ore",65,41
+"153","Schwartz",57,41
+"154","Bernstein",122,40
+"155","Burns",55,40
+"156","Garside",58,40
+"157","Shannon",91,40
+"158","Weber",55,40
+"159","Whitman",246,40
+"160","Descartes",90,39
+"161","Trier",105,38
+"162","Wolff",89,38
+"163","Bach",108,37
+"164","Owen",59,37
+"165","Strong",71,37
+"166","Yang",104,37
+"167","Hansen",118,35
+"168","Ernst",66,34
+"169","Hirst",106,34
+"170","Jordan",55,33
+"171","Shapiro",58,33
+"172","Wolf",58,33
+"173","Berry",87,32
+"174","Heller",43,32
+"175","Leon",97,32
+"176","Marco",43,32
+"177","O'Brien",54,32
+"178","Jacobs",37,31
+"179","McLuhan",90,31
+"180","Reed",81,31
+"181","Dyer",46,30
+"182","Hartmann",45,30
+"183","Hoffman",39,30
+"184","Lev Manovich",34,30
+"185","Stevenson",57,30
+"186","Coleridge",77,29
+"187","Koch",39,29
+"188","Lynch",53,29
+"189","Rubin",37,29
+"190","Silver",36,29
+"191","Faulkner",88,28
+"192","Goodman",45,28
+"193","Hanks",44,28
+"194","Higgins",42,28
+"195","Latour",107,28
+"196","Marx",89,28
+"197","Morrison",51,28
+"198","Nielsen",43,28
+"199","Bauer",41,27
+"200","Duncan",47,27
+"201","Sessions",33,27
+"202","Seymour",35,27
+"203","Solomon",98,27
+"204","Wong",42,27
+"205","Zimmerman",34,27
+"206","Cloud",64,26
+"207","Doyle",52,26
+"208","Everett",39,26
+"209","Myers",35,26
+"210","Neumann",53,26
+"211","Nichols",64,26
+"212","Wiener",50,26
+"213","Boyd",36,25
+"214","Christopher Marlowe",44,25
+"215","Lane",43,25
+"216","Peterson",45,25
+"217","Poor",29,25
+"218","Glass",50,24
+"219","Han",95,24
+"220","Jakobson",34,24
+"221","Jay David Bolter",30,24
+"222","Marshall McLuhan",32,24
+"223","Osborne",36,24
+"224","Warner",36,24
+"225","Wolfe",31,24
+"226","Allen Forte",29,23
+"227","Boyle",41,23
+"228","Bull",45,23
+"229","Garcia",30,23
+"230","Hahn",26,23
+"231","Johnston",36,23
+"232","Keller",33,23
+"233","Metz",39,23
+"234","Owens",62,23
+"235","Posner",51,23
+"236","Rosenberg",40,23
+"237","Angus",35,22
+"238","Carpenter",25,22
+"239","Grimm",60,22
+"240","Marks",30,22
+"241","Root",50,22
+"242","Seneca",43,22
+"243","Wolfram",31,22
+"244","Bakhtin",62,21
+"245","Brennan",29,21
+"246","Colby",30,21
+"247","Durand",41,21
+"248","Harper",25,21
+"249","Horn",48,21
+"250","Ong",54,21
+"251","Steiner",39,21
+"252","Wardrip-Fruin",64,21
+"253","Conway",43,20
+"254","Feldman",29,20
+"255","Fuller",29,20
+"256","Guest",40,20
+"257","Michael Joyce",40,20
+"258","Michel Foucault",22,20
+"259","Nietzsche",34,20
+"260","Pereira",34,20
+"261","Singer",28,20
+"262","Weaver",27,20
+"263","Ezra Pound",27,19
+"264","Forte",45,19
+"265","Frye",39,19
+"266","George Landow",28,19
+"267","Jameson",36,19
+"268","Landauer",63,19
+"269","Mozart",33,19
+"270","Bradford",32,18
+"271","Deleuze",35,18
+"272","Grosz",33,18
+"273","Lucy",30,18
+"274","Peirce",75,18
+"275","Walther",26,18
+"276","Berger",25,17
+"277","Bowman",58,17
+"278","Bruno Latour",21,17
+"279","Buchanan",23,17
+"280","Cologne",24,17
+"281","Curtis",22,17
+"282","Egan",34,17
+"283","Ellison",43,17
+"284","Firenze",93,17
+"285","Flores",29,17
+"286","Forest",27,17
+"287","Hay",91,17
+"288","Holloway",36,17
+"289","hooks",22,17
+"290","Hutchinson",24,17
+"291","Lambert",23,17
+"292","Orwell",34,17
+"293","Pound",24,17
+"294","Rousseau",27,17
+"295","Thornton",32,17
+"296","Wheeler",22,17
+"297","Barber",32,16
+"298","Eisenstein",24,16
+"299","Gay",20,16
+"300","Haas",26,16
+"301","Hartley",22,16
+"302","Kristeva",31,16
+"303","Neal",25,16
+"304","Parsons",35,16
+"305","Poster",30,16
+"306","Turkle",47,16
+"307","Ahmad",15,15
+"308","Barnett",22,15
+"309","Chestnut",19,15
+"310","Chisholm",28,15
+"311","Costa",24,15
+"312","Delany",25,15
+"313","Emmanuel",17,15
+"314","Fitting",24,15
+"315","Francis Bacon",41,15
+"316","Hamming",35,15
+"317","Hartman",27,15
+"318","Kumar",31,15
+"319","Lange",26,15
+"320","Levine",21,15
+"321","Rissanen",25,15
+"322","Searle",19,15
+"323","Sharp",19,15
+"324","Swanson",30,15
+"325","Walter Benjamin",18,15
+"326","Alan Turing",17,14
+"327","Bridges",17,14
+"328","Cowie",24,14
+"329","Cutting",22,14
+"330","Hale",18,14
+"331","Hanson",17,14
+"332","Harman",28,14
+"333","Hegel",23,14
+"334","Ho",27,14
+"335","Jacques Derrida",17,14
+"336","Lai",31,14
+"337","Magnus",16,14
+"338","Massey",21,14
+"339","McLeod",19,14
+"340","Ni",20,14
+"341","Noam Chomsky",15,14
+"342","Norris",23,14
+"343","Olson",35,14
+"344","Reich",34,14
+"345","Roman Jakobson",15,14
+"346","Christensen",15,13
+"347","Dubois",14,13
+"348","Engel",22,13
+"349","Engels",22,13
+"350","Ferguson",28,13
+"351","Greenwood",21,13
+"352","Horowitz",29,13
+"353","Kaufman",29,13
+"354","Lacan",176,13
+"355","Levinson",22,13
+"356","Mei",29,13
+"357","Popper",23,13
+"358","Ruiz",18,13
+"359","Waters",31,13
+"360","Webb",41,13
+"361","Zadeh",24,13
+"362","Adorno",22,12
+"363","Bernhard",13,12
+"364","Bloch",31,12
+"365","Boethius",27,12
+"366","Cherry",18,12
+"367","Cohn",31,12
+"368","Faber",19,12
+"369","Farmer",20,12
+"370","Kaufmann",21,12
+"371","Mandelbrot",21,12
+"372","Mayer",20,12
+"373","Northrop Frye",13,12
+"374","O'Connor",16,12
+"375","Pool",20,12
+"376","Reeves",18,12
+"377","Rings",19,12
+"378","Rodríguez",31,12
+"379","Steinberg",16,12
+"380","Terry Winograd",13,12
+"381","Ahmed",12,11
+"382","Bart",12,11
+"383","Berman",17,11
+"384","Eagleton",14,11
+"385","Feigenbaum",18,11
+"386","Gallagher",28,11
+"387","Harding",20,11
+"388","Hicks",34,11
+"389","Kelley",23,11
+"390","Kolmogorov",37,11
+"391","Kostka",23,11
+"392","Lim",17,11
+"393","Marchionini",20,11
+"394","Noah Wardrip-Fruin",11,11
+"395","Powers",14,11
+"396","Richter",16,11
+"397","Samuel Taylor Coleridge",15,11
+"398","Schiller",18,11
+"399","Tanaka",29,11
+"400","Christie",47,10
+"401","Claude Shannon",15,10
+"402","Epstein",25,10
+"403","Gilles Deleuze",11,10
+"404","Grundy",12,10
+"405","Holman",12,10
+"406","Julia Kristeva",11,10
+"407","Macaulay",13,10
+"408","Montaigne",15,10
+"409","Muir",28,10
+"410","Mumford",12,10
+"411","Muñoz",15,10
+"412","Quine",17,10
+"413","Rao",10,10
+"414","Sand",34,10
+"415","Sartre",23,10
+"416","Schulz",22,10
+"417","Sekine",18,10
+"418","Shoemaker",14,10
+"419","Abrams",13,9
+"420","Edelman",15,9
+"421","Fink",23,9
+"422","Gill",9,9
+"423","Guattari",16,9
+"424","Hanley",18,9
+"425","Hassan",30,9
+"426","Hinton",10,9
+"427","Landau",18,9
+"428","Lyman",9,9
+"429","Nei",13,9
+"430","Paik",9,9
+"431","Parikka",28,9
+"432","Pérez",16,9
+"433","Pollock",18,9
+"434","Ramirez",38,9
+"435","Reddy",13,9
+"436","Silverman",14,9
+"437","Vitruvius",19,9
+"438","Wiggins",15,9
+"439","Auden",10,8
+"440","Benveniste",18,8
+"441","Bode",42,8
+"442","Buckingham",18,8
+"443","Burch",16,8
+"444","Carey",12,8
+"445","Carver",18,8
+"446","Cixous",26,8
+"447","Clemens",11,8
+"448","Dawkins",22,8
+"449","Eyman",13,8
+"450","Garrard",23,8
+"451","Glover",10,8
+"452","Grossman",11,8
+"453","Habermas",15,8
+"454","Kleene",12,8
+"455","Lindquist",12,8
+"456","McKee",16,8
+"457","McMillan",11,8
+"458","Mead",9,8
+"459","Morse",14,8
+"460","of Cologne",8,8
+"461","Pain",14,8
+"462","Ruskin",48,8
+"463","Sherry Turkle",12,8
+"464","Speer",15,8
+"465","Suzuki",23,8
+"466","Thacker",21,8
+"467","Tilton",21,8
+"468","Trollope",43,8
+"469","Welch",11,8
+"470","Wittig",29,8
+"471","Alberti",72,7
+"472","Baudrillard",15,7
+"473","Belle",10,7
+"474","Bourdieu",15,7
+"475","Cherubini",7,7
+"476","Chow",10,7
+"477","Cliff",15,7
+"478","Confucius",8,7
+"479","Dun",10,7
+"480","Freire",20,7
+"481","George Gerbner",16,7
+"482","George Orwell",8,7
+"483","Harold Innis",7,7
+"484","Hawkes",79,7
+"485","Jacques Lacan",10,7
+"486","John von Neumann",9,7
+"487","Kling",70,7
+"488","Lenin",9,7
+"489","Lyotard",9,7
+"490","Marder",7,7
+"491","McBride",7,7
+"492","Mercator",8,7
+"493","Mikhail Bakhtin",8,7
+"494","Norbert Wiener",9,7
+"495","Raymond Williams",12,7
+"496","Rodgers",12,7
+"497","Schaeffer",10,7
+"498","Starr",8,7
+"499","van Leeuwen",13,7
+"500","Waugh",15,7
+"501","Wunsch",16,7
+"502","Youngblood",11,7
+"503","Agricola",9,6
+"504","Blondel",6,6
+"505","Bruns",11,6
+"506","Burnham",15,6
+"507","Caplan",12,6
+"508","David Bolter",7,6
+"509","Draper",7,6
+"510","Earl of Oxford",7,6
+"511","Fischler",8,6
+"512","Goody",10,6
+"513","Harder",8,6
+"514","Haywood",45,6
+"515","Jacques Rancière",6,6
+"516","Jussi Parikka",6,6
+"517","Kiesler",18,6
+"518","Krippendorff",15,6
+"519","Lara",13,6
+"520","Lefebvre",17,6
+"521","Mackay",7,6
+"522","Moravia",7,6
+"523","Padova",9,6
+"524","Paulo Freire",6,6
+"525","Prosser",6,6
+"526","Quincy",8,6
+"527","Quintilian",23,6
+"528","Rancière",22,6
+"529","Rapaport",6,6
+"530","Resnick",8,6
+"531","Rodrigues",8,6
+"532","Sim",34,6
+"533","Slide",8,6
+"534","Sternberg",11,6
+"535","Todorov",7,6
+"536","Warren Weaver",8,6
+"537","Willems",12,6
+"538","Wolfgang Ernst",8,6
+"539","Arnheim",10,5
+"540","Arrow",8,5
+"541","Blackmore",5,5
+"542","Bordwell",19,5
+"543","Bradbury",16,5
+"544","Braudel",5,5
+"545","Cheney",6,5
+"546","Cooke",7,5
+"547","Dworkin",22,5
+"548","Elias",5,5
+"549","Ferrara",6,5
+"550","Ferreira",7,5
+"551","Francia",8,5
+"552","Fredric Jameson",5,5
+"553","Gage",9,5
+"554","Haskell",5,5
+"555","Herbst",8,5
+"556","Hussain",10,5
+"557","Ince",8,5
+"558","Jean Baudrillard",5,5
+"559","John Ruskin",6,5
+"560","Jónsson",17,5
+"561","Jürgen Habermas",5,5
+"562","Kerr",5,5
+"563","Kleinberg",11,5
+"564","Knapp",5,5
+"565","Kolb",6,5
+"566","Lampert",5,5
+"567","Lavoie",6,5
+"568","Lerdahl",18,5
+"569","Lewin",5,5
+"570","Lewis Mumford",5,5
+"571","Lorenz",35,5
+"572","Lotman",9,5
+"573","Loy",5,5
+"574","Luhmann",10,5
+"575","Malinowski",6,5
+"576","Martini",13,5
+"577","Meissner",34,5
+"578","Merton",5,5
+"579","Pohl",6,5
+"580","Rorty",6,5
+"581","Rossi",5,5
+"582","Schäfer",9,5
+"583","Schumacher",5,5
+"584","Terry Eagleton",5,5
+"585","Tseng",5,5
+"586","von Neumann",14,5
+"587","Zielinski",14,5
+"588","Ainsworth",6,4
+"589","Alan Moore",12,4
+"590","Anthony Trollope",7,4
+"591","Ashby",9,4
+"592","bell hooks",6,4
+"593","Bellman",7,4
+"594","Benedetti",4,4
+"595","Benedetto",5,4
+"596","Blanchard",5,4
+"597","Brecht",12,4
+"598","Bryson",4,4
+"599","Cage",5,4
+"600","Casa",7,4
+"601","Cass",17,4
+"602","Christiane Paul",4,4
+"603","Chua",7,4
+"604","Cone",23,4
+"605","d'Alembert",5,4
+"606","David Bordwell",4,4
+"607","de Man",5,4
+"608","Dilthey",4,4
+"609","Donnelly",4,4
+"610","Downs",4,4
+"611","Dressler",5,4
+"612","Farina",7,4
+"613","Follett",7,4
+"614","Fraenkel",7,4
+"615","Ghosh",47,4
+"616","Grau",9,4
+"617","Grice",6,4
+"618","Halperin",5,4
+"619","Hardt",4,4
+"620","Harwood",4,4
+"621","Herz",4,4
+"622","Hook",20,4
+"623","Hosmer",7,4
+"624","Huberman",8,4
+"625","Huffman",7,4
+"626","Hurst",24,4
+"627","Jacques Ellul",4,4
+"628","Jakobsen",5,4
+"629","Kincaid",11,4
+"630","Ljung",4,4
+"631","Maffei",6,4
+"632","Mandel",4,4
+"633","Mary Wollstonecraft",5,4
+"634","McAdams",7,4
+"635","Merleau-Ponty",5,4
+"636","Moritz",4,4
+"637","Moya Bailey",5,4
+"638","Patrick Suppes",4,4
+"639","Phelps",4,4
+"640","Rahn",6,4
+"641","Raja",5,4
+"642","Ray Bradbury",4,4
+"643","René Descartes",4,4
+"644","Richard Dawkins",7,4
+"645","Richard Rorty",5,4
+"646","Rus",4,4
+"647","San Juan",5,4
+"648","Schenk",5,4
+"649","Sontag",6,4
+"650","Stefan Kostka",4,4
+"651","Suppes",13,4
+"652","Tomlin",7,4
+"653","Toscano",5,4
+"654","Wilmot",4,4
+"655","Ziegler",6,4
+"656","Zillig",7,4
+"657","Žižek",19,4
+"658","Allais",4,3
+"659","Babbitt",4,3
+"660","Birkhoff",8,3
+"661","Bonini",3,3
+"662","Boulez",3,3
+"663","Brenner",5,3
+"664","Brownlow",5,3
+"665","Callon",4,3
+"666","Cassiodorus",4,3
+"667","Champlin",4,3
+"668","Charles Sanders Peirce",3,3
+"669","Chew",4,3
+"670","Chiari",4,3
+"671","Crittenden",3,3
+"672","David Harvey",3,3
+"673","Donato",3,3
+"674","Donovan",12,3
+"675","Douglas Rushkoff",3,3
+"676","Drummond",4,3
+"677","Ebert",3,3
+"678","Eros",3,3
+"679","Eugene Thacker",3,3
+"680","Friedrich Nietzsche",3,3
+"681","Fromm",5,3
+"682","Galilei",3,3
+"683","Gerbner",8,3
+"684","Gerhardt",3,3
+"685","Gramsci",3,3
+"686","Harlow",3,3
+"687","Hauptmann",3,3
+"688","Horne",9,3
+"689","Ishmael",3,3
+"690","Itoh",4,3
+"691","Juhasz",8,3
+"692","Karl Marx",3,3
+"693","Kenneth Muir",3,3
+"694","Kimura",3,3
+"695","Kliman",3,3
+"696","Lévy",4,3
+"697","Lorber",3,3
+"698","Lorde",4,3
+"699","Lovejoy",3,3
+"700","Luxemburg",3,3
+"701","Maher",4,3
+"702","McKinney",7,3
+"703","McNally",4,3
+"704","Mehdi",3,3
+"705","Milton Babbitt",3,3
+"706","Neil Postman",4,3
+"707","Ogburn",3,3
+"708","Paul de Man",3,3
+"709","Pierre Bourdieu",4,3
+"710","Prasad",4,3
+"711","Priest",3,3
+"712","Pythagoras",5,3
+"713","Quigley",5,3
+"714","Regard",3,3
+"715","Reichardt",5,3
+"716","Ribeiro",4,3
+"717","Riemann",3,3
+"718","Rival",3,3
+"719","Rothman",6,3
+"720","Schoenberg",3,3
+"721","Seraji",9,3
+"722","Sergei Eisenstein",3,3
+"723","Sheehan",3,3
+"724","Shklovsky",3,3
+"725","Showalter",5,3
+"726","Siegfried Zielinski",3,3
+"727","Simone de Beauvoir",3,3
+"728","Sorokin",4,3
+"729","Spitz",5,3
+"730","Stam",4,3
+"731","Stiegler",6,3
+"732","Strindberg",3,3
+"733","Sugiyama",3,3
+"734","Tenney",3,3
+"735","Tiffin",4,3
+"736","Tracey",4,3
+"737","Tron",4,3
+"738","Trotsky",3,3
+"739","Wadsworth",6,3
+"740","Warnock",3,3
+"741","Wille",8,3
+"742","Wollstonecraft",7,3
+"743","Wyner",8,3
+"744","Abramson",2,2
+"745","Adkins",2,2
+"746","Agamben",11,2
+"747","Akrich",5,2
+"748","Albertus Magnus",2,2
+"749","Althusser",3,2
+"750","Amin",2,2
+"751","Antonio Gramsci",2,2
+"752","Arezzo",2,2
+"753","Audre Lorde",3,2
+"754","Baran",2,2
+"755","Barone",3,2
+"756","Bataille",2,2
+"757","Bateson",3,2
+"758","Baudry",2,2
+"759","Baym",2,2
+"760","Bazin",2,2
+"761","Beauvoir",3,2
+"762","Beebe",4,2
+"763","Bertolt Brecht",3,2
+"764","Bose",3,2
+"765","Bourgeois",2,2
+"766","Brockett",2,2
+"767","Bushnell",3,2
+"768","Carl Czerny",3,2
+"769","Cavanagh",2,2
+"770","Cavell",2,2
+"771","Chatterjee",2,2
+"772","Clover",2,2
+"773","Crenshaw",8,2
+"774","Crist",4,2
+"775","Czerny",9,2
+"776","David Hawkes",6,2
+"777","Dawes",12,2
+"778","de Quincy",5,2
+"779","Debord",6,2
+"780","Dick Higgins",2,2
+"781","Doty",8,2
+"782","Edgeworth",3,2
+"783","Ehrmann",9,2
+"784","Elizabeth Grosz",2,2
+"785","Ernst Bloch",2,2
+"786","Ewell",2,2
+"787","Fanon",2,2
+"788","Feeney",2,2
+"789","Fernand Braudel",2,2
+"790","Fernando Flores",2,2
+"791","Fineman",14,2
+"792","Gabel",6,2
+"793","Gandhi",3,2
+"794","Garnham",2,2
+"795","Geddes",2,2
+"796","Gere",2,2
+"797","Giorgio Agamben",3,2
+"798","Girard",3,2
+"799","Goldmann",2,2
+"800","Gonda",19,2
+"801","Gottfried Keller",2,2
+"802","Grams",3,2
+"803","Hao",2,2
+"804","Hardcastle",3,2
+"805","Hillis Miller",2,2
+"806","Hubbell",2,2
+"807","Imai",2,2
+"808","Innis",7,2
+"809","Isaacs",2,2
+"810","Isbell",3,2
+"811","Jean-Jacques Rousseau",3,2
+"812","Jean-Luc Nancy",2,2
+"813","John Cage",2,2
+"814","John Searle",2,2
+"815","Jukes",2,2
+"816","Kircher",2,2
+"817","Klaus Krippendorff",2,2
+"818","Kobayashi",3,2
+"819","Kracauer",22,2
+"820","Kroker",7,2
+"821","Kruger",2,2
+"822","Krylov",2,2
+"823","Kushner",3,2
+"824","Lasswell",4,2
+"825","Leon Battista Alberti",3,2
+"826","Lindström",7,2
+"827","Lukács",10,2
+"828","Macfarlane",2,2
+"829","MacKay",4,2
+"830","Marc Bloch",2,2
+"831","Mark Poster",2,2
+"832","Martianus Capella",2,2
+"833","Massumi",3,2
+"834","McLaren",2,2
+"835","Michael Bull",3,2
+"836","Michael Hardt",2,2
+"837","Michael Warner",2,2
+"838","Montag",3,2
+"839","Motte",10,2
+"840","Nam June Paik",2,2
+"841","Nancy Fraser",2,2
+"842","Niklas Luhmann",2,2
+"843","O'Keefe",2,2
+"844","Oliver Grau",2,2
+"845","Opitz",2,2
+"846","Pablo Neruda",3,2
+"847","Palladio",2,2
+"848","Pasquale",3,2
+"849","Perret",2,2
+"850","Pierre Boulez",2,2
+"851","Pierre Lévy",2,2
+"852","Pierre Schaeffer",3,2
+"853","Politzer",2,2
+"854","Praetorius",2,2
+"855","Priestley",2,2
+"856","Robert Morris",2,2
+"857","Rushkoff",6,2
+"858","Salazar",2,2
+"859","Sallis",2,2
+"860","Scanlon",2,2
+"861","Schachter",2,2
+"862","Schopenhauer",5,2
+"863","Schramm",5,2
+"864","Sedgwick",2,2
+"865","Shanken",2,2
+"866","Slavoj Žižek",2,2
+"867","Smythe",3,2
+"868","Stacey",3,2
+"869","Strogatz",5,2
+"870","Stumpf",3,2
+"871","Sunstein",3,2
+"872","Sutcliffe",2,2
+"873","Swinney",2,2
+"874","Symonds",4,2
+"875","Tankard",2,2
+"876","Tarski",2,2
+"877","Tyrrell",2,2
+"878","Uno",2,2
+"879","Unruh",3,2
+"880","Vladimir Levenshtein",2,2
+"881","Whiting",3,2
+"882","Woodcock",2,2
+"883","Ackermann",1,1
+"884","Akan",1,1
+"885","Alexandra Juhasz",1,1
+"886","Amitav Ghosh",2,1
+"887","André Bazin",1,1
+"888","Andrea Palladio",1,1
+"889","Andrew Sarris",2,1
+"890","Anna Morris",1,1
+"891","Anthony Wilden",1,1
+"892","Antonio Negri",1,1
+"893","Anzaldúa",1,1
+"894","Aris",2,1
+"895","Arnold Schoenberg",1,1
+"896","Asante",1,1
+"897","August Strindberg",1,1
+"898","Auguste Comte",1,1
+"899","Aumont",1,1
+"900","Aviezri Fraenkel",1,1
+"901","Azfar Hussain",1,1
+"902","Bachelard",1,1
+"903","Balakrishnan",1,1
+"904","Barbour",1,1
+"905","Barbu",1,1
+"906","Barrell",2,1
+"907","Battista Alberti",1,1
+"908","Beller",1,1
+"909","Beneš",1,1
+"910","Benford",2,1
+"911","Benincasa",1,1
+"912","Bennington",1,1
+"913","Berardi",1,1
+"914","Bernard Stiegler",1,1
+"915","Bernardi",1,1
+"916","Bersani",1,1
+"917","Bettelheim",1,1
+"918","Bhabha",1,1
+"919","Bhattacharya",6,1
+"920","Bill Nichols",1,1
+"921","Bonitzer",1,1
+"922","Boothby",1,1
+"923","Bowlby",1,1
+"924","Branco",1,1
+"925","Braudy",2,1
+"926","Breakwell",1,1
+"927","Brian O'Connor",1,1
+"928","Brogan",3,1
+"929","Bronner",1,1
+"930","Brossard",1,1
+"931","Buick",2,1
+"932","Burkhart",2,1
+"933","Califia",1,1
+"934","Callinicos",1,1
+"935","Cardoso",3,1
+"936","Carinthia",1,1
+"937","Carrera",2,1
+"938","Casagrande",1,1
+"939","Cass Sunstein",1,1
+"940","Castañeda",4,1
+"941","Caus",1,1
+"942","Césaire",2,1
+"943","Chaitin",1,1
+"944","Chantal Mouffe",1,1
+"945","Char Davies",1,1
+"946","Chesebro",1,1
+"947","Ciborra",1,1
+"948","Claus Pias",1,1
+"949","Colebrook",2,1
+"950","Colletti",1,1
+"951","Comte",1,1
+"952","Corman",1,1
+"953","da Firenze",1,1
+"954","Dabashi",1,1
+"955","Dantzig",1,1
+"956","Dasgupta",1,1
+"957","David Kolb",1,1
+"958","David Lewin",1,1
+"959","David Thomson",1,1
+"960","de Jongh",1,1
+"961","de Lauretis",1,1
+"962","de Sola Pool",1,1
+"963","Dehn",7,1
+"964","Di Benedetto",1,1
+"965","Dollimore",1,1
+"966","Dominic Pettman",1,1
+"967","Don Kulick",1,1
+"968","Dowden",1,1
+"969","Dumain",1,1
+"970","Edelstein",3,1
+"971","Edward Bernays",1,1
+"972","Ellul",1,1
+"973","Elsaesser",2,1
+"974","Eric McLuhan",1,1
+"975","Erlich",1,1
+"976","Fano",2,1
+"977","Fanti",2,1
+"978","Federici",1,1
+"979","Félix Guattari",1,1
+"980","Fiske",1,1
+"981","Flynt",1,1
+"982","Forney",1,1
+"983","Foskett",1,1
+"984","Frantz Fanon",1,1
+"985","Friese",1,1
+"986","Frizer",1,1
+"987","Gaard",1,1
+"988","Gallup",1,1
+"989","Gasparov",1,1
+"990","Gauntlett",1,1
+"991","Gayatri Chakravorty Spivak",1,1
+"992","Gazzano",1,1
+"993","George Herbert Mead",1,1
+"994","George Russell",1,1
+"995","George Woodcock",1,1
+"996","Gillborn",1,1
+"997","Gioseffo Zarlino",1,1
+"998","Golomb",1,1
+"999","Graham Phillips",1,1
+"1000","Gregory Bateson",2,1
+"1001","Greta Gaard",1,1
+"1002","Grootendorst",2,1
+"1003","Guido of Arezzo",1,1
+"1004","Haddad",1,1
+"1005","Hagan",2,1
+"1006","Hélène Cixous",1,1
+"1007","Henri Poincaré",1,1
+"1008","Herbert Marcuse",1,1
+"1009","Herbert Spencer",2,1
+"1010","Heynen",1,1
+"1011","Hildenbrand",3,1
+"1012","Holz",1,1
+"1013","Horvat",1,1
+"1014","Ihab Hassan",1,1
+"1015","Immanuel Wallerstein",1,1
+"1016","Ingram Frizer",1,1
+"1017","Irigaray",1,1
+"1018","Jack Goody",1,1
+"1019","Jafar",1,1
+"1020","James Tenney",1,1
+"1021","James Thomson",1,1
+"1022","Jean le Rond d'Alembert",1,1
+"1023","Jeremijenko",2,1
+"1024","Johann David Heinichen",3,1
+"1025","John Ellis",1,1
+"1026","John Law",2,1
+"1027","John Neal",1,1
+"1028","John Rahn",1,1
+"1029","Jonathan Dollimore",1,1
+"1030","Judith Butler",1,1
+"1031","Juri Lotman",1,1
+"1032","Jury",1,1
+"1033","Kafer",1,1
+"1034","Kamiya",1,1
+"1035","Kantorovich",1,1
+"1036","Kara Keeling",1,1
+"1037","Karl Liebknecht",1,1
+"1038","Kashyap",1,1
+"1039","Keeling",2,1
+"1040","Kepler",1,1
+"1041","Kevin Warwick",1,1
+"1042","Kirnberger",1,1
+"1043","Klatte",1,1
+"1044","Knecht",1,1
+"1045","Koolhaas",1,1
+"1046","Körner",1,1
+"1047","Kosofsky Sedgwick",1,1
+"1048","Kreps",1,1
+"1049","Kristin Thompson",1,1
+"1050","Kulick",1,1
+"1051","Laclau",1,1
+"1052","Lance Strate",1,1
+"1053","LaSalle",21,1
+"1054","Lavandier",2,1
+"1055","Leatherbarrow",1,1
+"1056","Lefkowitz",1,1
+"1057","Lefort",2,1
+"1058","Leo Braudy",1,1
+"1059","Levinas",1,1
+"1060","Lipsitz",1,1
+"1061","Looney",1,1
+"1062","Loos",1,1
+"1063","Macksey",1,1
+"1064","Mamdani",2,1
+"1065","Mannoni",1,1
+"1066","Mao Dun",1,1
+"1067","Marcuse",1,1
+"1068","Mark Wilson Jones",1,1
+"1069","Markiewicz",1,1
+"1070","Martí",2,1
+"1071","Martin Scorsese",1,1
+"1072","Maruyama",1,1
+"1073","Mast",1,1
+"1074","Matus",1,1
+"1075","Max Horkheimer",1,1
+"1076","Mbembe",1,1
+"1077","McGinn",1,1
+"1078","McIntosh",1,1
+"1079","McKean",2,1
+"1080","McQuail",1,1
+"1081","Memmi",2,1
+"1082","Menke",1,1
+"1083","Meyer Schapiro",1,1
+"1084","Miliband",1,1
+"1085","Minh-ha",1,1
+"1086","Misra",1,1
+"1087","Mohan",1,1
+"1088","Mohanty",1,1
+"1089","Mosca",24,1
+"1090","Mostafavi",1,1
+"1091","Mouffe",1,1
+"1092","Mulhall",1,1
+"1093","Mulvey",1,1
+"1094","Murch",1,1
+"1095","Muris",1,1
+"1096","Naomi Schor",1,1
+"1097","Neave",2,1
+"1098","Nechvatal",1,1
+"1099","Negri",1,1
+"1100","Nicholas Garnham",1,1
+"1101","Nickell",6,1
+"1102","Nicole Ellison",1,1
+"1103","Nordström",4,1
+"1104","Notker Labeo",1,1
+"1105","Nyquist",1,1
+"1106","O'Regan",1,1
+"1107","of Arezzo",1,1
+"1108","Ohta",1,1
+"1109","Oster",1,1
+"1110","Otto Neurath",1,1
+"1111","Palumbo",1,1
+"1112","Panitch",1,1
+"1113","Papapetrou",1,1
+"1114","Passmore",1,1
+"1115","Paul Kennedy",1,1
+"1116","Peet",1,1
+"1117","Pellegrini",5,1
+"1118","Percival",1,1
+"1119","Peter Dixon",2,1
+"1120","Peter Lyman",1,1
+"1121","Petrović",1,1
+"1122","Pettman",1,1
+"1123","Phipps",1,1
+"1124","Pias",11,1
+"1125","Piro",2,1
+"1126","Pitirim Sorokin",1,1
+"1127","Pollen",1,1
+"1128","Popov",1,1
+"1129","Postman",4,1
+"1130","Povinelli",3,1
+"1131","Pudovkin",1,1
+"1132","Quantz",1,1
+"1133","Quatremère de Quincy",1,1
+"1134","Quijano",2,1
+"1135","Rameau",1,1
+"1136","Raphael Samuel",1,1
+"1137","Rem Koolhaas",1,1
+"1138","Reti",1,1
+"1139","Rey Chow",1,1
+"1140","Richard Kennedy",1,1
+"1141","Rinaldi",1,1
+"1142","Roeper",1,1
+"1143","Ronat",1,1
+"1144","Ross Ashby",1,1
+"1145","Rössler",1,1
+"1146","Rovner",2,1
+"1147","Roxane Gay",1,1
+"1148","Rudolf Arnheim",1,1
+"1149","Rudolph Reti",2,1
+"1150","Rutter",1,1
+"1151","Sam Harris",1,1
+"1152","Sandoval",4,1
+"1153","Sarah Cook",1,1
+"1154","Sargeant",2,1
+"1155","Sarris",6,1
+"1156","Schillinger",1,1
+"1157","Schmucker",1,1
+"1158","Schoell",1,1
+"1159","Schreier",1,1
+"1160","Schröder",1,1
+"1161","Schützenberger",1,1
+"1162","Seger",1,1
+"1163","Semper",1,1
+"1164","Seyla Benhabib",1,1
+"1165","Shastri",1,1
+"1166","Shaviro",5,1
+"1167","Sheila Cavanagh",1,1
+"1168","Siegfried Kracauer",1,1
+"1169","Simon Buckingham",3,1
+"1170","Smale",2,1
+"1171","Sokolov",1,1
+"1172","Sollers",1,1
+"1173","Sonnenschein",1,1
+"1174","Sorel",1,1
+"1175","Sorge",1,1
+"1176","Spielberg",1,1
+"1177","Spivak",1,1
+"1178","Standish",1,1
+"1179","Stead",1,1
+"1180","Steven Shaviro",1,1
+"1181","Steven Spielberg",1,1
+"1182","Stokowski",2,1
+"1183","Strate",1,1
+"1184","Sylvan",1,1
+"1185","Tarasov",1,1
+"1186","Tassinari",1,1
+"1187","Tavernor",2,1
+"1188","Taylor Coleridge",1,1
+"1189","Telemann",1,1
+"1190","Teresa de Lauretis",1,1
+"1191","Thomas Elsaesser",1,1
+"1192","Togliatti",1,1
+"1193","Tomoko Ohta",1,1
+"1194","Toynbee",3,1
+"1195","Tymoczko",2,1
+"1196","Tzvetan Todorov",1,1
+"1197","Unger",3,1
+"1198","van Eemeren",3,1
+"1199","Viktor Shklovsky",1,1
+"1200","Vsevolod Pudovkin",1,1
+"1201","Wallerstein",3,1
+"1202","Walter Murch",1,1
+"1203","Wassily Leontief",1,1
+"1204","Watterson",1,1
+"1205","Wendt",1,1
+"1206","Wendy Brown",2,1
+"1207","Westphal",1,1
+"1208","Whittle",2,1
+"1209","Wilbur Schramm",1,1
+"1210","Wilden",2,1
+"1211","Wilson Jones",6,1
+"1212","Wythoff",2,1
+"1213","Yandle",1,1
+"1214","Zalta",1,1
+"1215","Zarlino",1,1
+"1216","Zeigler",2,1
