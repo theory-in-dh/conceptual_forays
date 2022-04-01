@@ -9,7 +9,7 @@ author:
   affiliation: Computational Humanities Group, Leipzig University
   email: burghardt@informatik.uni-leipzig.de
 - name: Andreas Niekler
-  affiliation: Computational Humanities Group
+  affiliation: Computational Humanities Group, Leipzig University
   email: andreas.niekler@uni-leipzig.de
 - name: Rabea Kleymann
   affiliation: Leibniz-Zentrum für Literatur- und Kulturforschung Berlin
