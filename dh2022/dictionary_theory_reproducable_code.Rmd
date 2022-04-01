@@ -1,0 +1,280 @@
+---
+title: "The many faces of theory in DH"
+subtitle: "Toward a dictionary of theoreticians mentioned in DH"
+author:
+- name: Silvia Gutiérrez
+  affiliation: Computational Humanities Group, Leipzig University
+  email: silviaegt@uni-leipzig.de 
+- name: Manuel Burghardt
+  affiliation: Computational Humanities Group, Leipzig University
+  email: burghardt@informatik.uni-leipzig.de
+- name: Andreas Niekler
+  affiliation: Computational Humanities Group
+  email: andreas.niekler@uni-leipzig.de
+- name: Rabea Kleymann
+  affiliation: Leibniz-Zentrum für Literatur- und Kulturforschung Berlin
+  email: kleymann@zfl-berlin.org
+date: "`r format(Sys.time(), '%d %B %Y')`"
+tags: [nothing, nothingness]
+abstract: |
+  The question for theory in the Digital Humanities is an important and ongoing debate. This paper seeks to lay a foundation for further empirical approaches by presenting a dictionary of theoreticians mentioned in three well-known DH journals, enriched via Wikipedia and Wikidata APIs.
+  
+  This is the reproducable code part where we share our data and scripts. Note, the original sources can't be shared yet. If you want to use the data feel free to contact us!
+  
+  The source for the reference and people list can be found here: [Original used list](https://github.com/eisioriginal/conceptual_forays/blob/main/4_data_reconciliation/theorystrings_categories_humans.csv)
+  
+  This page was generated with this file: [Rmd File](https://github.com/eisioriginal/conceptual_forays/blob/main/dh2022/dictionary_theory_reproducable_code.Rmd)
+output: 
+  html_document:
+    theme: readable
+    highlight: tango
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (knitr::is_html_output()) knitr::knit_hooks$set(
+  plot = function(x, options) {
+    cap  <- options$fig.cap  # figure caption
+    tags <- htmltools::tags
+    as.character(tags$figure(
+      tags$img(src = x, alt = cap),
+      tags$figcaption(cap)
+    ))
+  }
+)
+```
+
+
+
+# Initialization
+
+```{r init, echo=F, eval=T,include=F}
+library(tidyverse)
+library(quanteda)
+```
+
+```{r init_real, eval=F}
+library(tidyverse)
+library(quanteda)
+```
+# Read data
+
+```{r read_data, warning=F, cache=T}
+#------------READING_DATA
+options(stringsAsFactors = FALSE)
+
+textdata <- read.csv("../1_data/dh_journals_corpus.csv", sep = ",", encoding = "UTF-8")
+
+authors <- read.csv(file = "../4_data_reconciliation/theorystrings_categories_humans.csv")
+
+authors.enriched <- authors %>% 
+  as_tibble() %>% 
+  mutate(itemLabel_corrected = str_remove_all(string = itemLabel, pattern = ", Jr.")) %>%
+  mutate(itemLabel_corrected = str_remove_all(string = itemLabel_corrected, pattern = " II")) %>%
+  mutate(itemLabel_corrected = str_remove_all(string = itemLabel_corrected, pattern = " III")) %>%
+  mutate(itemLabel_corrected = str_remove_all(string = itemLabel_corrected, pattern = " IV")) %>%
+  mutate(itemLabel_corrected = str_remove_all(string = itemLabel_corrected, pattern = " V")) %>%
+  mutate(itemLabel_corrected = str_remove_all(string = itemLabel_corrected, pattern = " VI")) %>%
+  mutate(surename_ngram_one = str_split_fixed(itemLabel_corrected,pattern = " ",n = 2)[,2]) %>%
+  mutate(surename_ngram_two = str_split_fixed(itemLabel_corrected,pattern = " ",n = 3)[,3]) %>%
+  mutate(surename_ngram_three = str_split_fixed(itemLabel_corrected,pattern = " ",n = 4)[,4])
+
+#DELETE Basic fault theory
+authors.enriched <- authors.enriched %>% filter(itemLabel_corrected != "Basic fault theory")
+```
+
+
+# Creating Dictionaries
+
+
+```{r create_dict, echo=T, cache=T, warning=F}
+#------------CREATING_DICTIOARY
+authors.dict <- c()
+
+phraser <- function(my.string) {
+  my.string <- str_trim(my.string)
+  
+  if (str_detect(string = my.string, pattern = " "))
+  {
+    return(phrase(my.string))
+  }
+  else
+  {
+    return(my.string)
+  }
+}
+
+for (i in 1:nrow(authors.enriched)) {
+  authors.dict <-
+    c(authors.dict,
+      phrase(authors.enriched$itemLabel_corrected[i]))
+  
+  if (authors.enriched$surename_ngram_one[i] != "")
+  {
+    authors.dict <-
+      c(authors.dict,
+        phraser(authors.enriched$surename_ngram_one[i]))
+  }
+  
+  if (authors.enriched$surename_ngram_two[i] != "")
+  {
+    authors.dict <-
+      c(authors.dict,
+        phraser(authors.enriched$surename_ngram_two[i]))
+  }
+  
+  if (authors.enriched$surename_ngram_three[i] != "")
+  {
+    authors.dict <-
+      c(authors.dict,
+        phraser(authors.enriched$surename_ngram_three[i]))
+  }
+}
+```
+
+# Extracting information
+
+```{r dict_lookup,warning=F,echo=T, cache=T}
+#-------------------LOOKUP
+referenes.kwic <-
+  kwic(tokens(textdata$fulltext),
+       pattern = authors.dict,
+       case_insensitive = F)
+
+textdata$docname = 1:nrow(textdata)
+
+references.tibble <-
+  tibble(
+    docname = integer(),
+    word = character(),
+    year = integer(),
+    dict = character(),
+    from = integer(),
+    to = integer()
+  )
+
+references.tibble <-
+  referenes.kwic %>% as_tibble() %>% select(docname, from, to, keyword) %>% distinct() %>%
+  mutate(docname = as.integer(stringi::stri_sub(docname, 5))) %>%
+  left_join(., textdata[, c("docname", "year")]) %>% ungroup()
+
+#If two rows have the same beginning or ending then merge and use the longest string
+#Then aggregate types and count per document
+references.tibble %<>% group_by(docname, to) %>% #filter(docname %in% c(369,3386)) FOR test
+  summarise(
+    keyword = keyword[which.max(nchar(keyword))],
+    from = from[which.max(nchar(keyword))],
+    to = to[which.max(nchar(keyword))],
+    year = year[which.max(nchar(keyword))],
+    .groups = 'drop'
+  ) %>% ungroup() %>%
+  group_by(docname, from) %>%
+  summarise(
+    keyword = keyword[which.max(nchar(keyword))],
+    from = from[which.max(nchar(keyword))],
+    to = to[which.max(nchar(keyword))],
+    year = year[which.max(nchar(keyword))],
+    .groups = 'drop'
+  ) %>%
+  select(docname, keyword, year) %>%
+  group_by(docname, year, keyword) %>%
+  count() 
+```
+
+## Basic Statistics
+
+```{r statistics, warning=F,echo=T, cache=T}
+#---------------STATISTICS
+authors.enriched.contained_in_corpus <-  authors.enriched %>%
+  mutate(containd.in.corpus =
+           itemLabel_corrected %in% unique(references.tibble$keyword)) %>%
+  mutate(containd.in.corpus.consolidate = containd.in.corpus |
+           (surename_ngram_one %in% unique(references.tibble$keyword))) %>%
+  mutate(containd.in.corpus.consolidate = containd.in.corpus.consolidate |
+           (surename_ngram_two %in% unique(references.tibble$keyword))) %>%
+  mutate(containd.in.corpus.consolidate = containd.in.corpus.consolidate |
+           (surename_ngram_three %in% unique(references.tibble$keyword)))
+
+sum.consolidate.prop <-
+  sum(authors.enriched.contained_in_corpus$containd.in.corpus.consolidate) /
+  nrow(authors.enriched.contained_in_corpus)
+
+sum.fullname.prop <-
+  sum(authors.enriched.contained_in_corpus$containd.in.corpus) / 
+  nrow(authors.enriched.contained_in_corpus)
+
+ndoc.min_one_person <-
+  (references.tibble %>% ungroup() %>% 
+     select(docname) %>% 
+     distinct() %>% 
+     nrow()) / nrow(textdata)
+```
+
+- **Number of n-gram variants found in corpus**: `r format(sum.consolidate.prop * 100, digits = 4, nsmall=2)`%
+- **Number of persons sited with full name**: `r format(sum.fullname.prop * 100, digits = 4, nsmall=2)`%
+- **How many references from the dictionary where found in the text**: `r sum(references.tibble$n)`
+- **How many documents contain at least one person**: `r format(ndoc.min_one_person * 100, digits = 4, nsmall=2)`%
+
+```{r statistics2, warning=F,echo=T, cache=T}
+#How many different persons (types) does a doc contain on average (with SD)?
+references.tibble.count_person_per_doc <- references.tibble %>%
+  ungroup() %>%
+  select(docname, keyword) %>%
+  distinct() %>%
+  count(docname)
+
+#Boxplot statistics
+qnt <- quantile(references.tibble.count_person_per_doc$n)
+H <- 1.5 * IQR(references.tibble.count_person_per_doc$n, na.rm = T)
+```
+
+How many different persons (types) does a doc contain on average? We calculated the following statistics on that:
+
+- **Mean**: `r mean(references.tibble.count_person_per_doc$n)`
+- **Median**: `r median(references.tibble.count_person_per_doc$n)`
+- **Standard Deviation**: `r sd(references.tibble.count_person_per_doc$n)`
+- **75% Quantile + Inter Quartile Range**: `r (qnt[4] + H)`
+
+```{r statistics3, warning=F,echo=T, cache=T,fig.topcaption=TRUE,  fig.cap = "Boxplot showing the average distribution of persons per document. Note, we have some outliers above 18 different mentions. This needs to be investigated."}
+boxplot(references.tibble.count_person_per_doc$n)
+```
+
+```{css, echo=FALSE}
+figure {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  margin: 1em 0;
+}
+figcaption {
+  padding: .5em;
+  background: black;
+  color: white;
+  font-size: 1.3em;
+  font-variant: small-caps;
+}
+```
+
+As a next step we create a term and document frequency table of the most frequent persons with a full name match in our corpus.
+
+```{r statistics4, warning=F,echo=T, cache=T}
+#Bonus: Liste aller persons mit doc_freq und overall_token_freq
+references.ranked <- references.tibble %>%
+  ungroup() %>% select(keyword, n) %>%
+  group_by(keyword) %>%
+  summarize(tf = sum(n),
+            df = n()) %>%
+  arrange(desc(df))
+
+write.csv(references.ranked, file = "reference.theorists.partial.csv")
+
+rmarkdown::paged_table(
+  references.ranked %>% filter(keyword %in% authors$itemLabel),
+  options = list(rows.print = 20)
+)
+```
+
