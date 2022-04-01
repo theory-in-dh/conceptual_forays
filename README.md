@@ -6,7 +6,7 @@ In this reporitory we present the results and papers for our research about the 
 
 **The many faces of theory in DH**: *Toward a dictionary of theoreticians mentioned in DH*
 
-You can find the code and data for the paper here: [Paper Code](https://eisioriginal.github.io/conceptual_forays/dh2022/dictionary_theory_reproducable_code.html)
+You can find the code and data for the paper here: [Paper Code](https://conceptual-forays.github.io/theory-in-dh/conceptual_forays/dh2022/dictionary_theory_reproducable_code.html)
 
 # Contributors
 
