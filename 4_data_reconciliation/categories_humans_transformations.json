@@ -1,0 +1,143 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "item",
+    "expression": "grel:value.split(\"/\")[-1]",
+    "onError": "set-to-blank",
+    "newColumnName": "q_id",
+    "columnInsertIndex": 2,
+    "description": "Create column q_id at index 2 based on column item using expression grel:value.split(\"/\")[-1]"
+  },
+  {
+    "op": "core/recon-use-values-as-identifiers",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "q_id",
+    "service": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "description": "Use values as reconciliation identifiers in column q_id"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "q_id",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P27",
+          "name": "country of citizenship"
+        }
+      ]
+    },
+    "columnInsertIndex": 3,
+    "description": "Extend data at index 3 based on column q_id"
+  },
+  {
+    "op": "core/multivalued-cell-join",
+    "columnName": "country of citizenship",
+    "keyColumnName": "item",
+    "separator": "|",
+    "description": "Join multi-valued cells in column country of citizenship"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "q_id",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P21",
+          "name": "sex or gender"
+        }
+      ]
+    },
+    "columnInsertIndex": 3,
+    "description": "Extend data at index 3 based on column q_id"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "q_id",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "Den",
+          "name": "SPARQL: Den"
+        }
+      ]
+    },
+    "columnInsertIndex": 3,
+    "description": "Extend data at index 3 based on column q_id"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Den",
+    "newColumnName": "description",
+    "description": "Rename column Den to description"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "sex or gender",
+    "newColumnName": "sex_gender",
+    "description": "Rename column sex or gender to sex_gender"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "country of citizenship",
+    "newColumnName": "country_citizenship",
+    "description": "Rename column country of citizenship to country_citizenship"
+  },
+  {
+    "op": "core/extend-reconciled-data",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "q_id",
+    "endpoint": "https://wikidata.reconci.link/en/api",
+    "identifierSpace": "http://www.wikidata.org/entity/",
+    "schemaSpace": "http://www.wikidata.org/prop/direct/",
+    "extension": {
+      "properties": [
+        {
+          "id": "P569",
+          "name": "date of birth"
+        }
+      ]
+    },
+    "columnInsertIndex": 3,
+    "description": "Extend data at index 3 based on column q_id"
+  },
+  {
+    "op": "core/multivalued-cell-join",
+    "columnName": "date of birth",
+    "keyColumnName": "item",
+    "separator": "|",
+    "description": "Join multi-valued cells in column date of birth"
+  }
+]
