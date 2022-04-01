@@ -23,7 +23,7 @@ abstract: |
   
   The source for the reference and people list can be found here: [Original used list](https://github.com/eisioriginal/conceptual_forays/blob/main/4_data_reconciliation/theorystrings_categories_humans.csv)
   
-  This page was generated with this file: [Rmd File](https://github.com/eisioriginal/conceptual_forays/blob/main/dh2022/dictionary_theory_reproducable_code.Rmd)
+  This page was generated with this file: [Rmd File](https://github.com/eisioriginal/conceptual_forays/blob/main/dh2022/dictionary_theory_reproducible_code.Rmd)
 output: 
   html_document:
     theme: readable
