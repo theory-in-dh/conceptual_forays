@@ -22,4 +22,4 @@ for query_string in query_strings:
 
 print(all_results_df)
 all_results_df["category"] = all_results_df["title"].str.split("Category:").apply(lambda l: l[1])
-all_results_df.to_csv("data_api_queries/complete_categories_wikipedia.csv")
+all_results_df.to_csv("1_data/3_complete_categories_wikipedia.csv")

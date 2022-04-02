@@ -1,6 +1,7 @@
+##### Load libraries #####
 library(tidyverse)
 
-##### Functions #####
+##### Load function #####
 
 #Taken from: https://github.com/wikimedia/WikidataQueryServiceR/issues/12
 querki <- function(query,h="text/csv") {
@@ -11,6 +12,7 @@ querki <- function(query,h="text/csv") {
   return(httr::content(response))
 }
 
+##### Create query (search humans inside a Wikipedia category) #####
 #Adapted from: https://github.com/lubianat/topictagger/blob/master/titlematch/utils.R
 cat_query <- function(category){
   cat_query <- paste0('SELECT ?item ?itemLabel WHERE {
