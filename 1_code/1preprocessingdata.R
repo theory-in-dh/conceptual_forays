@@ -3,13 +3,15 @@ library(readr)
 library(tidyverse)
 library(janitor)
 
+##### Review data in OpenRefine - see data/1_theoryoftransformations.json & data/1_theor_of_normalized.csv
+
 #### Read data & clean column names #### 
 jjtheory <- read_csv("1_data/1_JJ_theor_.csv")
 nntheory <- read_csv("1_data/1_NN_theor_.csv")
-theory <- read_csv("1_data/2_theor_of_normalized.csv")
+theory <- read_csv("1_data/1_theor_of_normalized.csv")
 jjtheory <- clean_names(jjtheory)#549
 nntheory <- clean_names(nntheory)#434
-theory <- clean_names(theory)# 3,376
+theory <- clean_names(theory)#3,376
 
 #### Join all "theories of" strings #### 
 theoriesof <- full_join(theory, jjtheory, by = c("normalized_string" = "clustered_jj_theor"))%>%
@@ -23,7 +25,7 @@ theoriesof %>%
 unique_theoriesof <- dplyr::distinct(theoriesof, normalized_string)
 
 #### Write csv with unique "theor* of" strings #### 
-write_csv(unique_theoriesof, "1_data/2_theoriesof_complete.csv")
+write_csv(unique_theoriesof, "1_data/1_theoriesof_complete.csv")
 
 #### Compare different "theor* of" sets #### 
 myl <- list(A = jjtheory$clustered_jj_theor,

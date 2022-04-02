@@ -34,4 +34,4 @@ print(all_results_df)
 all_results_df["category"] = all_results_df["title"].str.split("Category:").apply(lambda l: l[1])
 
 #### Save results in csv
-all_results_df.to_csv("1_data/3_complete_categories_wikipedia.csv")
+all_results_df.to_csv("1_data/2_wikipediacategoriesfromquery.csv")
