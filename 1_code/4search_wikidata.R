@@ -38,7 +38,7 @@ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en".
 
 ##### Load data ######
 
-data <- readr::read_csv("data_api_queries/wikicategories_distances_filtered.csv")
+data <- readr::read_csv("1_data/3_wikicategories_distances_filtered.csv")
 
 
 ###### Apply query & create data frame ####
@@ -53,11 +53,29 @@ df <- tibble(
 df <- df %>% 
   unnest(data)
 
-###### Export to csv ####
-write_csv(df, "data_reconciliation/theorystrings_categories_humans.csv")
-
+###### Export to csv #####
+write_csv(df, "1_data/4_theorystrings_categories_humans.csv")
+#df <- read_csv("1_data/4_theorystrings_categories_humans.csv")
 names(df)
 
-difitems <- df %>% 
-  count(itemLabel, sort = T)
+###### Unique humans (2219) #####
+df_unique <- df %>%
+  distinct(itemLabel, .keep_all = TRUE) %>% 
+  select(-category)
 
+###### Write csv with unique human items #####
+write_csv(df_unique, "1_data/4_theorystrings_categories_humans_unique.csv")
+
+#### Enrich Wikidata items with reconciliation in OpenRefine ####
+#1. Use 1_data/4_categories_humans_transformations.json to get same transformations
+#2. For more information on the reconciliation process see: https://wikidata.reconci.link/en/api
+#3. Resulting csv: "1_data/4_theorystrings_humans_extended.csv"
+
+##### Add categories to enriched/extended Wikidata items
+
+humanscat <- df
+humansenriched <- read_csv("1_data/4_theorystrings_humans_extended.csv")
+humansenrichedcomplete <- humanscat %>% 
+  right_join(humansenriched, by = c("itemLabel", "item"))
+
+write_csv(humansenrichedcomplete, "1_data/4_theorystrings_humans_extended_withcategories.csv")

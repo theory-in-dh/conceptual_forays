@@ -3,16 +3,8 @@ library(tidyverse)
 library(readr)
 library(janitor)
 
-
-humanscat <- read_csv("4_data_reconciliation/theorystrings_categories_humans.csv")
-humansenriched <- read_csv("5_data_enrichment/theorystrings_categories_humans_extended.csv")
-humansenrichedcomplete <- humanscat %>% 
-  right_join(humansenriched, by = c("itemLabel", "item"))
-
-write_csv(humansenrichedcomplete, "5_data_enrichment/theorystrings_humans_extended_withcategories.csv")
-
 # fetch data
-data <- read_csv("5_data_enrichment/theory_dictionary_wikidata_extended.csv")
+data <- read_csv("1_data/4_theory_dictionary_wikidata_extended.csv")
 #normalize column names
 data <- clean_names(data)
 data
