@@ -85,15 +85,3 @@ wordcloud(words = df_words_count$words, freq = df_words_count$n, scale =c(4,1), 
 
 
 write_csv(df, "1_data/3_wikicategories_distances_filtered.csv")
-
-humans <- read_csv("1_data/4_theorystrings_categories_humans.csv")
-
-humans_jac06 <- left_join(df, humans, by = c("title" = "category"))
-
-humans_jac06 <- humans_jac06 %>% 
-  select(-...1,-ns) %>% 
-  rename(category_title = title,
-         wikidata_url = item,
-         wikidata_entity = itemLabel)
-
-write_csv(humans_jac06, "1_data/5_theorystrings_humans_smalljacdistance.csv")
