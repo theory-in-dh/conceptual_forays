@@ -29,8 +29,9 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+library(reticulate)
+use_python("/usr/local/bin/python")
 knitr::opts_chunk$set(echo = TRUE)
-
 if (knitr::is_html_output()) knitr::knit_hooks$set(
   plot = function(x, options) {
     cap  <- options$fig.cap  # figure caption
