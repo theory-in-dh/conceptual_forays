@@ -1,6 +1,6 @@
 ---
 title: "The many faces of theory in DH"
-subtitle: "Toward a dictionary of theoreticians mentioned in DH"
+subtitle: "Toward a dictionary of theoreticians mentioned in three DH Journals"
 author:
 - name: Silvia Gutiérrez
   affiliation: Computational Humanities Group, Leipzig University
@@ -15,14 +15,11 @@ author:
   affiliation: Leibniz-Zentrum für Literatur- und Kulturforschung Berlin
   email: kleymann@zfl-berlin.org
 date: "`r format(Sys.time(), '%d %B %Y')`"
-tags: [nothing, nothingness]
+tags: [digital humanities, theory]
 abstract: |
-  The question for theory in the Digital Humanities is an important and ongoing debate. This paper seeks to lay a foundation for further empirical approaches by presenting a dictionary of theoreticians mentioned in three well-known DH journals, enriched via Wikipedia and Wikidata APIs.
-  
-  This is the reproducable code part where we share our data and scripts. Note, the original sources can't be shared yet. If you want to use the data feel free to contact us!
-  
-  The source for the reference and people list can be found here: [Original used list](https://github.com/eisioriginal/conceptual_forays/blob/main/4_data_reconciliation/theorystrings_categories_humans.csv)
-  
+  The question for theory in the Digital Humanities is an important and ongoing debate. In this commented code, we share an empirical approach to this debate by presenting a dictionary of theoreticians mentioned in three well-known DH journals, enriched via Wikipedia and Wikidata APIs.
+  This work in progress has been accepted at the DH2022 Conference and this can be seen as a guide to the code behind this project.
+  Please bare in mind the original sources can't be shared yet. If you want to use the data feel free to [contact us](https://github.com/theory-in-dh/conceptual_forays#contributors)!
   This page was generated with this file: [Rmd File](https://github.com/eisioriginal/conceptual_forays/blob/main/dh2022/dictionary_theory_reproducible_code.Rmd)
 output: 
   html_document:
@@ -46,29 +43,297 @@ if (knitr::is_html_output()) knitr::knit_hooks$set(
 )
 ```
 
+## 1. Create a unified "theory of" strings data set
 
+### Load packages
 
-# Initialization
 
 ```{r init, echo=F, eval=T,include=F}
+library(readr)
 library(tidyverse)
+library(janitor)
 library(quanteda)
+library(stringdist)
+
 ```
 
 ```{r init_real, eval=F}
+library(readr)
 library(tidyverse)
+library(janitor)
 library(quanteda)
+library(stringdist)
+
 ```
-# Read data
+### Previous step: OpenRefine
+First we review our data in OpenRefine in order to avoid duplicates, you can see the transformations we applied in the data folder at the 1_theoryoftransformations.json file, and the resulting file under the same folder with the name: 1_theor_of_normalized.csv
+
+### Read the data
+
+```{r read_data1, warning=F, cache=T, message=F}
+#### Read all files that have the "theory of" strings ####
+jjtheory <- read_csv("../data/1_JJ_theor_.csv") ## adjective + theory (e.g.  economic theory)
+nntheory <- read_csv("../data/1_NN_theor_.csv") ## noun + theory (e.g.  chaos theory)
+theory <- read_csv("../data/1_theor_of_normalized.csv") ## theory of strings  (e.g. theory of information) now cleaned with OpenRefine (see previous step)
+#### Apply janitor::clean_names function to get tidy column names ####
+jjtheory <- clean_names(jjtheory)#549
+nntheory <- clean_names(nntheory)#434
+theory <- clean_names(theory)#3,376
+```
+### Unify datasets
+
+```{r unify_datasets, warning=F, cache=T, message=F}
+#### Unite all files that have the "theory of" strings ####
+theoriesof <- full_join(theory, jjtheory, by = c("normalized_string" = "clustered_jj_theor"))%>%
+  full_join(., nntheory, by=c("normalized_string" = "clustered_nn_theor")) %>%
+  unite("freq", freq:token_count.y, sep = "", remove = T, na.rm = T) %>% 
+  select(-query_string, -x)
+```
+
+### Filter unique & create joined csv
+
+```{r filter_unique, warning=F, cache=T, message=F}
+#### Filter unique "theories of" strings #### 
+unique_theoriesof <- dplyr::distinct(theoriesof, normalized_string)
+#### Write csv with unique "theor* of" strings #### 
+write_csv(unique_theoriesof, "../data/1_theoriesof_complete.csv")
+```
+
+## 2. Matching strings with Wikipedia Categories
+```{python}
+#### Import libraries
+import requests
+import pandas as pd
+import os
+
+#### Get file with all "theory of strings"
+string_filename = "../data/1_theoriesof_complete.csv"
+
+#### Get file with all "theory of strings" and read it with pandas
+df = pd.read_csv(string_filename)
+
+#### Get all strings and read them as a list
+query_strings = df["normalized_string"].values.tolist()
+
+#### Create empty dataframe to save query results
+all_results_df = pd.DataFrame()
+
+#### Run query and save results in df
+for query_string in query_strings:
+    url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch={query_string}&srnamespace=14"
+    #url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=intitle:{query_string}&srnamespace=14"
+    r = requests.get(url)
+    search_results = r.json()['query']['search']
+    new_df = pd.DataFrame(search_results)
+    new_df['query_string'] = query_string
+    all_results_df = all_results_df.append(new_df)
+    for result in search_results:
+        print(result)
+
+print(all_results_df)
+
+#### Create column "title" with category name without "Category:" string
+all_results_df["category"] = all_results_df["title"].str.split("Category:").apply(lambda l: l[1])
+
+#### Save results in csv
+all_results_df.to_csv("../data/2_wikipediacategoriesfromquery.csv")
+```
+
+## 3. Measuring Wikipedia Categories with small Jac distance
+
+```{r jac_dist, warning=F, cache=T, message=F}
+#### Read categories retrieved from matching with "theory of" strings ####
+
+categories_wikipedia <- read_csv("../data/3_complete_categories_wikipedia.csv")
+names(categories_wikipedia)
+length(unique(categories_wikipedia$title)) #1266
+length(unique(categories_wikipedia$query_string)) #1529
+
+#### Count number of categories by each "theory of" string ####
+catcountbystring<- categories_wikipedia %>%
+  group_by(query_string) %>%
+  summarise(count = n_distinct(title))
+
+#### Create histogram of number of categories by string query (mf cont: 10 categories per query) ####
+ggplot(catcountbystring) +
+  aes(x = count) +
+  geom_histogram(bins = 30L, fill = "#112446") +
+  labs(
+    title = "Histogram of dif. categories retrieved by query string",
+    caption = "By Silvia Gutiérrez"
+  ) +
+  theme_minimal()
+
+
+#### Delete "Category:" string to match and compare with query string ####
+categories_wikipedia <- categories_wikipedia %>% 
+  mutate(category = stringr::str_replace_all(categories_wikipedia$title, "Category:", ""))
+
+#### Calculate jac distance ####
+categories_wikipedia_distances <- categories_wikipedia %>% 
+  mutate(jac = purrr::map2(.x= categories_wikipedia$category, .y= categories_wikipedia$query_string,  ~  stringdist(.x, .y, method = "jaccard", q=3)),
+         lev = purrr::map2(.x= categories_wikipedia$category, .y= categories_wikipedia$query_string,  ~  stringdist(.x, .y, method = "lv")))
+
+categories_wikipedia_distances <- categories_wikipedia_distances %>% 
+  mutate(jac = unlist(jac),
+         lev = unlist(lev))
+
+cat_count <- categories_wikipedia_distances %>% 
+  count(category)
+#### Data exploration #### 
+##### Categories wordcloud ##### 
+library(wordcloud)
+set.seed(1234)
+wordcloud(words = cat_count$category, freq = cat_count$n, min.freq = 5,
+          max.words=200, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+
+##### Terms wordcloud ##### 
+swen <- tibble(words = stopwords::stopwords("en", source = "snowball"))
+cat_count_words <- cat_count %>% 
+  tidytext::unnest_tokens(words, category) %>% 
+  anti_join(swen)
+wordcloud(words = cat_count_words$words, freq = cat_count_words$n, min.freq = 30,
+          max.words=100, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(4, "Dark2"))
+
+#### Filter categories #### 
+
+##### Filter by jac dist ##### 
+df <- categories_wikipedia_distances %>% 
+  filter(jac < 0.6)
+
+##### Filter by strange kw found in wordcloud ##### 
+df <- categories_wikipedia_distances %>% 
+  filter(jac < 0.6,
+         !grepl('WikiProject|Wikipedia|[C|c]onspiracy|Christ|[M|m]ilitary|articles|journals|missing|Satanic|[T|t]errorism|abuse|backlog|Lists|albums', category),
+         !grepl('[C|c]onspiracy|[T|t]elevision|Nazis', snippet))
+
+
+#### Explore results with wordcloud #### 
+
+df_words_count <- df %>%
+  select(category) %>% 
+  tidytext::unnest_tokens(words, category) %>% 
+  anti_join(swen) %>% 
+  count(words)
+
+wordcloud(words = df_words_count$words, freq = df_words_count$n, scale =c(4,1), min.freq = 1,
+          max.words=100, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+
+
+write_csv(df, "../data/3_wikicategories_distances_filtered.csv")
+```
+
+## 4. Search "humans" within each Wikipedia category using Wikidata
+
+```{r wikidata_search, warning=F, cache=T, message=F}
+##### Load function #####
+
+#Taken from: https://github.com/wikimedia/WikidataQueryServiceR/issues/12
+querki <- function(query,h="text/csv") {
+  require(httr)
+  response <- httr::GET(url = "https://query.wikidata.org/sparql", 
+                        query = list(query = query),
+                        httr::add_headers(Accept = h))
+  return(httr::content(response))
+}
+
+##### Create query (search humans inside a Wikipedia category) #####
+#Adapted from: https://github.com/lubianat/topictagger/blob/master/titlematch/utils.R
+cat_query <- function(category){
+  cat_query <- paste0('SELECT ?item ?itemLabel WHERE {
+  BIND("', category, '" as ?category)
+  SERVICE wikibase:mwapi {
+     bd:serviceParam wikibase:endpoint "en.wikipedia.org";
+                     wikibase:api "Generator";
+                     mwapi:generator "categorymembers";
+                     mwapi:gcmtitle ?category.
+     ?item wikibase:apiOutputItem mwapi:item.
+  } 
+  FILTER BOUND (?item)
+  FILTER EXISTS {
+    ?article schema:about ?item .
+    ?item wdt:P31 wd:Q5.
+  }
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }    
+}
+')
+  return(cat_query)
+}
+
+
+##### Load data ######
+
+data <- readr::read_csv("../data/3_wikicategories_distances_filtered.csv")
+
+
+###### Apply query & create data frame ####
+queries_titles <- unique(data$title)
+queries <- purrr::map(queries_titles, .f=cat_query)
+
+df <- tibble(
+  category = queries_titles,
+  data = purrr::map(queries, .f=querki))
+
+###### Unnest data ####
+df <- df %>% 
+  unnest(data)
+
+###### Export to csv #####
+write_csv(df, "../data/4_theorystrings_categories_humans.csv")
+#df <- read_csv("../data/4_theorystrings_categories_humans.csv")
+names(df)
+
+###### Unique humans (2219) #####
+df_unique <- df %>%
+  distinct(itemLabel, .keep_all = TRUE) %>% 
+  select(-category)
+
+###### Write csv with unique human items #####
+write_csv(df_unique, "../data/4_theorystrings_categories_humans_unique.csv")
+
+#### Enrich Wikidata items with reconciliation in OpenRefine ####
+#1. Use 1_data/4_categories_humans_transformations.json to get same transformations
+#2. For more information on the reconciliation process see: https://wikidata.reconci.link/en/api
+#3. Resulting csv: "../data/4_theorystrings_humans_extended.csv"
+
+##### Add categories to enriched/extended Wikidata items
+
+humanscat <- df
+humansenriched <- read_csv("../data/4_theorystrings_humans_extended.csv")
+humansenrichedcomplete <- humanscat %>% 
+  right_join(humansenriched, by = c("itemLabel", "item"))
+
+write_csv(humansenrichedcomplete, "../data/4_theorystrings_humans_extended_withcategories.csv")
+
+```
+## 5. Explore theorists
+```{r explore_theorists, warning=F, cache=T, message=F}
+##### Fetch data #####
+data <- read_csv("../data/4_theory_dictionary_wikidata_extended.csv")
+##### Clean column names #####
+data <- clean_names(data)
+data
+##### Explore distinct genders #####
+data %>% 
+  distinct(wikidata_id, .keep_all = TRUE) %>% # eliminates duplicates (! remember: there are some persons that appear more than once)
+  count(sex_or_gender)
+
+data %>% 
+  distinct(wikidata_id, .keep_all = TRUE) %>%
+  count(country_of_citizenship, sort = T)
+
+```
+
+## 6. Contrast new dictionary against corpus
 
 ```{r read_data, warning=F, cache=T}
 #------------READING_DATA
 options(stringsAsFactors = FALSE)
-
-textdata <- read.csv("../1_data/dh_journals_corpus.csv", sep = ",", encoding = "UTF-8")
-
-authors <- read.csv(file = "../4_data_reconciliation/theorystrings_categories_humans.csv")
-
+textdata <- read.csv("../data/dh_journals_corpus.csv", sep = ",", encoding = "UTF-8")
+authors <- read.csv(file = "../data/theorystrings_categories_humans.csv")
 authors.enriched <- authors %>% 
   as_tibble() %>% 
   mutate(itemLabel_corrected = str_remove_all(string = itemLabel, pattern = ", Jr.")) %>%
@@ -80,7 +345,6 @@ authors.enriched <- authors %>%
   mutate(surename_ngram_one = str_split_fixed(itemLabel_corrected,pattern = " ",n = 2)[,2]) %>%
   mutate(surename_ngram_two = str_split_fixed(itemLabel_corrected,pattern = " ",n = 3)[,3]) %>%
   mutate(surename_ngram_three = str_split_fixed(itemLabel_corrected,pattern = " ",n = 4)[,4])
-
 #DELETE Basic fault theory
 authors.enriched <- authors.enriched %>% filter(itemLabel_corrected != "Basic fault theory")
 ```
@@ -92,7 +356,6 @@ authors.enriched <- authors.enriched %>% filter(itemLabel_corrected != "Basic fa
 ```{r create_dict, echo=T, cache=T, warning=F}
 #------------CREATING_DICTIOARY
 authors.dict <- c()
-
 phraser <- function(my.string) {
   my.string <- str_trim(my.string)
   
@@ -105,7 +368,6 @@ phraser <- function(my.string) {
     return(my.string)
   }
 }
-
 for (i in 1:nrow(authors.enriched)) {
   authors.dict <-
     c(authors.dict,
@@ -142,9 +404,7 @@ referenes.kwic <-
   kwic(tokens(textdata$fulltext),
        pattern = authors.dict,
        case_insensitive = F)
-
 textdata$docname = 1:nrow(textdata)
-
 references.tibble <-
   tibble(
     docname = integer(),
@@ -154,12 +414,10 @@ references.tibble <-
     from = integer(),
     to = integer()
   )
-
 references.tibble <-
   referenes.kwic %>% as_tibble() %>% select(docname, from, to, keyword) %>% distinct() %>%
   mutate(docname = as.integer(stringi::stri_sub(docname, 5))) %>%
   left_join(., textdata[, c("docname", "year")]) %>% ungroup()
-
 #If two rows have the same beginning or ending then merge and use the longest string
 #Then aggregate types and count per document
 references.tibble %<>% group_by(docname, to) %>% #filter(docname %in% c(369,3386)) FOR test
@@ -196,15 +454,12 @@ authors.enriched.contained_in_corpus <-  authors.enriched %>%
            (surename_ngram_two %in% unique(references.tibble$keyword))) %>%
   mutate(containd.in.corpus.consolidate = containd.in.corpus.consolidate |
            (surename_ngram_three %in% unique(references.tibble$keyword)))
-
 sum.consolidate.prop <-
   sum(authors.enriched.contained_in_corpus$containd.in.corpus.consolidate) /
   nrow(authors.enriched.contained_in_corpus)
-
 sum.fullname.prop <-
   sum(authors.enriched.contained_in_corpus$containd.in.corpus) / 
   nrow(authors.enriched.contained_in_corpus)
-
 ndoc.min_one_person <-
   (references.tibble %>% ungroup() %>% 
      select(docname) %>% 
@@ -224,7 +479,6 @@ references.tibble.count_person_per_doc <- references.tibble %>%
   select(docname, keyword) %>%
   distinct() %>%
   count(docname)
-
 #Boxplot statistics
 qnt <- quantile(references.tibble.count_person_per_doc$n)
 H <- 1.5 * IQR(references.tibble.count_person_per_doc$n, na.rm = T)
@@ -262,16 +516,14 @@ figcaption {
 As a next step we create a term and document frequency table of the most frequent persons with a full name match in our corpus.
 
 ```{r statistics4, warning=F,echo=T, cache=T}
-#Bonus: Liste aller persons mit doc_freq und overall_token_freq
+#Bonus: List all persons with doc_freq and overall_token_freq
 references.ranked <- references.tibble %>%
   ungroup() %>% select(keyword, n) %>%
   group_by(keyword) %>%
   summarize(tf = sum(n),
             df = n()) %>%
   arrange(desc(df))
-
-write.csv(references.ranked, file = "reference.theorists.partial.csv")
-
+write.csv(references.ranked, file = "../data/reference.theorists.partial.csv")
 rmarkdown::paged_table(
   references.ranked %>% filter(keyword %in% authors$itemLabel),
   options = list(rows.print = 20)
