@@ -327,11 +327,11 @@ data <- read_csv("../data/4_theorystrings_humans_extended_withcategories.csv")
 data <- clean_names(data)
 ##### Explore distinct genders #####
 data %>% 
-  distinct(wikidata_id, .keep_all = TRUE) %>% # eliminates duplicates (! remember: there are some persons that appear more than once)
+  distinct(q_id, .keep_all = TRUE) %>% # eliminates duplicates (! remember: there are some persons that appear more than once)
   count(sex_gender)
 
 data %>% 
-  distinct(wikidata_id, .keep_all = TRUE) %>%
+  distinct(q_id, .keep_all = TRUE) %>%
   count(country_citizenship, sort = T)
 
 ```
