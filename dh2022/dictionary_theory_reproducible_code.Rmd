@@ -49,12 +49,13 @@ if (knitr::is_html_output()) knitr::knit_hooks$set(
 ### Load packages
 
 
-```{r init, echo=F, eval=T,include=F}
+```{r init, echo=F, eval=F,include=F}
 library(readr)
 library(tidyverse)
 library(janitor)
 library(quanteda)
 library(stringdist)
+library(wordcloud)
 
 ```
 
@@ -64,6 +65,7 @@ library(tidyverse)
 library(janitor)
 library(quanteda)
 library(stringdist)
+library(wordcloud)
 
 ```
 ### Previous step: OpenRefine
@@ -101,7 +103,7 @@ write_csv(unique_theoriesof, "../data/1_theoriesof_complete.csv")
 ```
 
 ## 2. Matching strings with Wikipedia Categories
-```{python}
+```{python eval=F}
 #### Import libraries
 import requests
 import pandas as pd
@@ -145,7 +147,7 @@ all_results_df.to_csv("../data/2_wikipediacategoriesfromquery.csv")
 ```{r jac_dist, warning=F, cache=T, message=F}
 #### Read categories retrieved from matching with "theory of" strings ####
 
-categories_wikipedia <- read_csv("../data/3_complete_categories_wikipedia.csv")
+categories_wikipedia <- read_csv("../data/2_wikipediacategoriesfromquery.csv")
 names(categories_wikipedia)
 length(unique(categories_wikipedia$title)) #1266
 length(unique(categories_wikipedia$query_string)) #1529
@@ -181,11 +183,14 @@ categories_wikipedia_distances <- categories_wikipedia_distances %>%
 
 cat_count <- categories_wikipedia_distances %>% 
   count(category)
+```
+
+### Optional: Explore words in Category titles using wordclouds
+```{r jac_dist_exploration, echo=T, eval=F, warning=F, cache=T, message=F}
 #### Data exploration #### 
 ##### Categories wordcloud ##### 
-library(wordcloud)
 set.seed(1234)
-wordcloud(words = cat_count$category, freq = cat_count$n, min.freq = 5,
+wordcloud::wordcloud(words = cat_count$category, freq = cat_count$n, min.freq = 5,
           max.words=200, random.order=FALSE, rot.per=0.35, 
           colors=brewer.pal(8, "Dark2"))
 
@@ -194,10 +199,13 @@ swen <- tibble(words = stopwords::stopwords("en", source = "snowball"))
 cat_count_words <- cat_count %>% 
   tidytext::unnest_tokens(words, category) %>% 
   anti_join(swen)
-wordcloud(words = cat_count_words$words, freq = cat_count_words$n, min.freq = 30,
+wordcloud::wordcloud(words = cat_count_words$words, freq = cat_count_words$n, min.freq = 30,
           max.words=100, random.order=FALSE, rot.per=0.35, 
           colors=brewer.pal(4, "Dark2"))
+```
 
+### Filter categories using jac dist and keywords
+```{r jac_dist_filter, echo=T, eval=T, warning=F, cache=T, message=F}
 #### Filter categories #### 
 
 ##### Filter by jac dist ##### 
@@ -209,8 +217,9 @@ df <- categories_wikipedia_distances %>%
   filter(jac < 0.6,
          !grepl('WikiProject|Wikipedia|[C|c]onspiracy|Christ|[M|m]ilitary|articles|journals|missing|Satanic|[T|t]errorism|abuse|backlog|Lists|albums', category),
          !grepl('[C|c]onspiracy|[T|t]elevision|Nazis', snippet))
-
-
+```
+### Optional: review filtered categories with wordcloud
+```{r jac_dist_exploration2, echo=T, eval=F, warning=F, cache=T, message=F}
 #### Explore results with wordcloud #### 
 
 df_words_count <- df %>%
@@ -219,17 +228,17 @@ df_words_count <- df %>%
   anti_join(swen) %>% 
   count(words)
 
-wordcloud(words = df_words_count$words, freq = df_words_count$n, scale =c(4,1), min.freq = 1,
+wordcloud::wordcloud(words = df_words_count$words, freq = df_words_count$n, scale =c(4,1), min.freq = 1,
           max.words=100, random.order=FALSE, rot.per=0.35, 
           colors=brewer.pal(8, "Dark2"))
 
-
+##### Write results into a csv ##### 
 write_csv(df, "../data/3_wikicategories_distances_filtered.csv")
 ```
 
 ## 4. Search "humans" within each Wikipedia category using Wikidata
 
-```{r wikidata_search, warning=F, cache=T, message=F}
+```{r wikidata_search, eval=F, warning=F, cache=T, message=F}
 ##### Load function #####
 
 #Taken from: https://github.com/wikimedia/WikidataQueryServiceR/issues/12
@@ -313,18 +322,17 @@ write_csv(humansenrichedcomplete, "../data/4_theorystrings_humans_extended_withc
 ## 5. Explore theorists
 ```{r explore_theorists, warning=F, cache=T, message=F}
 ##### Fetch data #####
-data <- read_csv("../data/4_theory_dictionary_wikidata_extended.csv")
+data <- read_csv("../data/4_theorystrings_humans_extended_withcategories.csv")
 ##### Clean column names #####
 data <- clean_names(data)
-data
 ##### Explore distinct genders #####
 data %>% 
   distinct(wikidata_id, .keep_all = TRUE) %>% # eliminates duplicates (! remember: there are some persons that appear more than once)
-  count(sex_or_gender)
+  count(sex_gender)
 
 data %>% 
   distinct(wikidata_id, .keep_all = TRUE) %>%
-  count(country_of_citizenship, sort = T)
+  count(country_citizenship, sort = T)
 
 ```
 
@@ -334,7 +342,7 @@ data %>%
 #------------READING_DATA
 options(stringsAsFactors = FALSE)
 textdata <- read.csv("../data/dh_journals_corpus.csv", sep = ",", encoding = "UTF-8")
-authors <- read.csv(file = "../data/theorystrings_categories_humans.csv")
+authors <- read.csv(file = "../data/4_theorystrings_humans_extended_withcategories.csv")
 authors.enriched <- authors %>% 
   as_tibble() %>% 
   mutate(itemLabel_corrected = str_remove_all(string = itemLabel, pattern = ", Jr.")) %>%
@@ -354,7 +362,7 @@ authors.enriched <- authors.enriched %>% filter(itemLabel_corrected != "Basic fa
 # Creating Dictionaries
 
 
-```{r create_dict, echo=T, cache=T, warning=F}
+```{r create_dict, echo=T,cache=T, warning=F}
 #------------CREATING_DICTIOARY
 authors.dict <- c()
 phraser <- function(my.string) {
@@ -467,13 +475,11 @@ ndoc.min_one_person <-
      distinct() %>% 
      nrow()) / nrow(textdata)
 ```
-
 - **Number of n-gram variants found in corpus**: `r format(sum.consolidate.prop * 100, digits = 4, nsmall=2)`%
 - **Number of persons sited with full name**: `r format(sum.fullname.prop * 100, digits = 4, nsmall=2)`%
 - **How many references from the dictionary where found in the text**: `r sum(references.tibble$n)`
 - **How many documents contain at least one person**: `r format(ndoc.min_one_person * 100, digits = 4, nsmall=2)`%
-
-```{r statistics2, warning=F,echo=T, cache=T}
+```{r statistics2, warning=F,echo=T, cache=T,eval=F}
 #How many different persons (types) does a doc contain on average (with SD)?
 references.tibble.count_person_per_doc <- references.tibble %>%
   ungroup() %>%
@@ -516,7 +522,7 @@ figcaption {
 
 As a next step we create a term and document frequency table of the most frequent persons with a full name match in our corpus.
 
-```{r statistics4, warning=F,echo=T, cache=T}
+```{r statistics4, warning=F,echo=T, cache=T, eval=F}
 #Bonus: List all persons with doc_freq and overall_token_freq
 references.ranked <- references.tibble %>%
   ungroup() %>% select(keyword, n) %>%
