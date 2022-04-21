@@ -20,7 +20,7 @@ abstract: |
   The question for theory in the Digital Humanities is an important and ongoing debate. In this commented code, we share an empirical approach to this debate by presenting a dictionary of theoreticians mentioned in three well-known DH journals, enriched via Wikipedia and Wikidata APIs.
   This work in progress has been accepted at the DH2022 Conference and this can be seen as a guide to the code behind this project.
   Please bare in mind the original sources can't be shared yet. If you want to use the data feel free to [contact us](https://github.com/theory-in-dh/conceptual_forays#contributors)!
-  This page was generated with this file: [Rmd File](https://github.com/eisioriginal/conceptual_forays/blob/main/dh2022/dictionary_theory_reproducible_code.Rmd)
+  This page was generated with this file: [Rmd File](https://github.com/eisioriginal/conceptual_forays/blob/main/dh2022/dictionary_theory_commented_code.Rmd)
 output: 
   html_document:
     theme: readable

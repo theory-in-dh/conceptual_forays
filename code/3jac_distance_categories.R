@@ -2,10 +2,10 @@
 library(tidyverse)
 library(readr)
 library(stringdist)
-
+library(wordcloud)
 #### Read categories retrieved from matching with "theory of" strings ####
 
-categories_wikipedia <- read_csv("1_data/3_complete_categories_wikipedia.csv")
+categories_wikipedia <- read_csv("../data/2_wikipediacategoriesfromquery.csv")
 names(categories_wikipedia)
 length(unique(categories_wikipedia$title)) #1266
 length(unique(categories_wikipedia$query_string)) #1529
@@ -43,9 +43,8 @@ cat_count <- categories_wikipedia_distances %>%
   count(category)
 #### Data exploration #### 
 ##### Categories wordcloud ##### 
-library(wordcloud)
 set.seed(1234)
-wordcloud(words = cat_count$category, freq = cat_count$n, min.freq = 5,
+wordcloud::wordcloud(words = cat_count$category, freq = cat_count$n, min.freq = 5,
           max.words=200, random.order=FALSE, rot.per=0.35, 
           colors=brewer.pal(8, "Dark2"))
 
