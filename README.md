@@ -4,7 +4,7 @@ In this repository we present the results and code for our research about the st
 
 # DH 2022
 
-**The many faces of theory in DH**: *Toward a dictionary of theoreticians mentioned in DH*
+**The many faces of theory in DH**: *Toward a dictionary of theoreticians mentioned in three DH journals*
 
 You can find the code and data for the paper here: [Paper Code](https://theory-in-dh.github.io/conceptual_forays/dh2022/dictionary_theory_reproducible_code.html)
 
