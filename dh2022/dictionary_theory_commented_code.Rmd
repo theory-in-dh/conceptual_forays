@@ -49,7 +49,7 @@ if (knitr::is_html_output()) knitr::knit_hooks$set(
 ### Load packages
 
 
-```{r init, echo=F, eval=F,include=F}
+```{r init, echo=F, eval=T,include=F}
 library(readr)
 library(tidyverse)
 library(janitor)
@@ -73,7 +73,7 @@ First we review our data in OpenRefine in order to avoid duplicates, you can see
 
 ### Read the data
 
-```{r read_data1, warning=F, cache=T, message=F, eval=F}
+```{r read_data1, warning=F, cache=T, message=F}
 #### Read all files that have the "theory of" strings ####
 jjtheory <- read_csv("../data/1_JJ_theor_.csv") ## adjective + theory (e.g.  economic theory)
 nntheory <- read_csv("../data/1_NN_theor_.csv") ## noun + theory (e.g.  chaos theory)
@@ -85,7 +85,7 @@ theory <- clean_names(theory)#3,376
 ```
 ### Unify datasets
 
-```{r unify_datasets, warning=F, cache=T, message=F, eval=F}
+```{r unify_datasets, warning=F, cache=T, message=F}
 #### Unite all files that have the "theory of" strings ####
 theoriesof <- full_join(theory, jjtheory, by = c("normalized_string" = "clustered_jj_theor"))%>%
   full_join(., nntheory, by=c("normalized_string" = "clustered_nn_theor")) %>%
@@ -95,7 +95,7 @@ theoriesof <- full_join(theory, jjtheory, by = c("normalized_string" = "clustere
 
 ### Filter unique & create joined csv
 
-```{r filter_unique, warning=F, cache=T, message=F, eval=F}
+```{r filter_unique, warning=F, cache=T, message=F}
 #### Filter unique "theories of" strings #### 
 unique_theoriesof <- dplyr::distinct(theoriesof, normalized_string)
 #### Write csv with unique "theor* of" strings #### 
@@ -144,7 +144,7 @@ all_results_df.to_csv("../data/2_wikipediacategoriesfromquery.csv")
 
 ## 3. Measuring Wikipedia Categories with small Jac distance
 
-```{r jac_dist, warning=F, cache=T, message=F, eval=F}
+```{r jac_dist, warning=F, cache=T, message=F}
 #### Read categories retrieved from matching with "theory of" strings ####
 
 categories_wikipedia <- read_csv("../data/2_wikipediacategoriesfromquery.csv")
@@ -186,7 +186,7 @@ cat_count <- categories_wikipedia_distances %>%
 ```
 
 ### Optional: Explore words in Category titles using wordclouds
-```{r jac_dist_exploration, echo=T, eval=F, warning=F, cache=T, message=F, eval=F}
+```{r jac_dist_exploration, echo=T, warning=F, cache=T, message=F}
 #### Data exploration #### 
 ##### Categories wordcloud ##### 
 set.seed(1234)
@@ -219,7 +219,7 @@ df <- categories_wikipedia_distances %>%
          !grepl('[C|c]onspiracy|[T|t]elevision|Nazis', snippet))
 ```
 ### Optional: review filtered categories with wordcloud
-```{r jac_dist_exploration2, echo=T, eval=F, warning=F, cache=T, message=F}
+```{r jac_dist_exploration2, echo=T, warning=F, cache=T, message=F, eval=F}
 #### Explore results with wordcloud #### 
 
 df_words_count <- df %>%
@@ -320,7 +320,7 @@ write_csv(humansenrichedcomplete, "../data/4_theorystrings_humans_extended_withc
 
 ```
 ## 5. Explore theorists
-```{r explore_theorists, warning=F, cache=T, message=F, eval=F}
+```{r explore_theorists, warning=F, cache=T, message=F}
 ##### Fetch data #####
 data <- read_csv("../data/4_theorystrings_humans_extended_withcategories.csv")
 ##### Clean column names #####
@@ -479,7 +479,7 @@ ndoc.min_one_person <-
 - **Number of persons sited with full name**: `r format(sum.fullname.prop * 100, digits = 4, nsmall=2)`%
 - **How many references from the dictionary where found in the text**: `r sum(references.tibble$n)`
 - **How many documents contain at least one person**: `r format(ndoc.min_one_person * 100, digits = 4, nsmall=2)`%
-```{r statistics2, warning=F,echo=T, cache=T,eval=F}
+```{r statistics2, warning=F,echo=T, cache=T}
 #How many different persons (types) does a doc contain on average (with SD)?
 references.tibble.count_person_per_doc <- references.tibble %>%
   ungroup() %>%
@@ -522,7 +522,7 @@ figcaption {
 
 As a next step we create a term and document frequency table of the most frequent persons with a full name match in our corpus.
 
-```{r statistics4, warning=F,echo=T, cache=T, eval=F}
+```{r statistics4, warning=F,echo=T, cache=T}
 #Bonus: List all persons with doc_freq and overall_token_freq
 references.ranked <- references.tibble %>%
   ungroup() %>% select(keyword, n) %>%

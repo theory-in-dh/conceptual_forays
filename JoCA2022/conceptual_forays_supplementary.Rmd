@@ -23,19 +23,15 @@ tags:
 - theory
 abstract: |
   The status of theory in the Digital Humanities (DH) has been the subject of much debate. As a result, we find different theory narratives competing and entangled with each other. If at all, these narratives can only be grasped and examined from a somewhat detached perspective. Here, we attempt to investigate these elusive narratives by means of a conceptual history approach. In doing so, we define different theory dimensions, ranging from specific cultural and literary theory frameworks to more generic uses of the concept of theory. We examine the use and semantic changes of these theory notions in a large corpus of DH journals. Using a mixture of heuristic methods and approaches from the field of distributional semantics, we aim to create tellable conceptual stories of DH theory. If you want to use the data feel free to [contact us](https://github.com/theory-in-dh/conceptual_forays#contributors)!
-  This page was generated with this file: [Rmd File](https://github.com/eisioriginal/conceptual_forays/blob/main/dh2022/dictionary_theory_commented_code.Rmd)
+  This page was generated with this file: [Rmd File](https://github.com/eisioriginal/conceptual_forays/blob/main/JoCA2022/conceptual_forays_supplementary.Rmd)
 ---
 
 The related article was published in the *Journal of Cultural Analytics (JoCA)*, ISSN 2371-4549, within the call *Theorytellings: Epistemic Narratives in the Digital Humanities*
 
+[Dictionary (Markdown) -- Download](https://theory-in-dh.github.io/conceptual_forays/data/theory_dictionary.md "download")
+
 [Supplementary Table -- Download](./table_supplementary.ods "download")
 
-[Dictionary (Markdown) -- Download](./table_supplementary.ods "download")
-
-## 1. Frequency of theory references within different documents 
-
-The information can be found in the downloadable table in the spreadsheet **"frequencies dict_items"**.
-
-## 2. List of all ranks and rank changes for 3-year-slices
-
-The information can be found in the downloadable table in the spreadsheet **"ranks over time"**.
+- Endnote 62: Spreadsheet **frequencies dict_items**
+- Endnote 73: Spreadsheet **cooccurrences**
+- Endnote 90: Spreadsheet **ranks over time**
