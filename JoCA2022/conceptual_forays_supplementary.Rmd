@@ -11,7 +11,7 @@ author:
 - name: Andreas Niekler
   affiliation: Computational Humanities Group, Leipzig University
   email: andreas.niekler@uni-leipzig.de
-date: "`r format(Sys.time(), '%d %B %Y')`"
+date: "`r Sys.setlocale('LC_TIME', 'English'); format(Sys.time(), '%d %B %Y')`"
 output:
   html_document:
     theme: readable
