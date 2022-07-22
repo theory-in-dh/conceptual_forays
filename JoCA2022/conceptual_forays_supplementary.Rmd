@@ -30,5 +30,5 @@ The related article was published in the *Journal of Cultural Analytics (JoCA)*,
 
 [Dictionary (Markdown) -- Download](https://theory-in-dh.github.io/conceptual_forays/data/theory_dictionary.md "download")
 
-[Supplementary Table -- Download](../data/theory_dictionary.md "download")
+[Supplementary Table -- Download](./table_supplementary.ods "download")
 
