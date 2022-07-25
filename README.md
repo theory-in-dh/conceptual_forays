@@ -1,6 +1,6 @@
 # Conceptual Forays: A Corpus-based Study of “Theorytellings” in Digital Humanities Journals
 
-In this repository we present the results and code for our research about the status of theory in the digital humanities.
+In this repository, we present the results and code for our research about the status of theory in the digital humanities.
 
 # JoCA 2022
 
@@ -20,4 +20,4 @@ You can find the code and data for the paper here: [Paper Code](https://theory-i
 - Silvia Gutiérrez (twitter: [@espejolento](https://twitter.com/espejolento) | computational humanities team:  [profile](https://ch.uni-leipzig.de/team/))
 - Manuel Burghardt
 - Andreas Niekler ([University's profile](https://www.uni-leipzig.de/en/profile/mitarbeiter/dr-andreas-niekler))
-- Rabea Kleymann
+- Rabea Kleymann (ZfL https://www.zfl-berlin.org/people-detail/kleymann.html)
